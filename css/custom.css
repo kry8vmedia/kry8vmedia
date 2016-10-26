@@ -1,0 +1,89 @@
+.who-picture {
+    width: 75%;
+    height: 75%;
+}
+#our-team {
+    background: #262626;
+}
+.item {
+    margin: 0;
+    color: #666;
+    padding: 0.3em 0 0 0;
+    color: black;
+}
+.item h2 img {
+    width: 15%;
+    height: 15%;
+    display: inline-block;
+    border-radius:50%;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    -o-border-radius:50%;
+    padding-bottom: 2em;
+}
+.item h3 {
+    font-family: 'Josephin Slab', serif;
+}
+.item{
+    text-align: center;
+    height:400px !important;
+}
+.carousel{
+    margin-top: 20px;
+}
+.caption{
+    padding-bottom: 50px;
+}
+.caption h3{
+    font-weight: 700;
+    text-shadow: none;
+}
+.caption p{
+    text-shadow:none;
+    color: #EEE;
+    font-size: 0.96em;
+    line-height: 1.5em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+ <div id="our-services" class="content-section-a">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">Our Services</h2>
+                    <p class="lead">Working on a banger and need some tweaking and what not?
+                    <br>
+                    <br>We currently offer audio production services such as:
+                        <ul>
+                            <li>Instrumental Production</li>
+                            <li>Vocal Recording</li>
+                            <li>Mixing & Mastering</li>
+                        </ul>
+                    </p>
+                    <p class="lead">
+                        We aim to serve you with the highest possible quality. Please feel free to <a href="#contact-us">contact us</a> for more information.
+                    </p>
+                </div>
+                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                    <img title="Mixing Console" class="img-responsive" src="img/mixer-2.jpg" alt="Mixing Console">
+                </div>
+            </div>
+        </div>
+        <!-- /.container -->
+    </div>
+*/
