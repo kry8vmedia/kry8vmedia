@@ -43,7 +43,7 @@ h2 {
 }
 
 q {
-  font-size: 1.5em; 
+  font-size: 1.5em;
   font-family: 'Josefin Slab', serif;
   font-weight: 400;
 }
@@ -84,7 +84,7 @@ font-size: 5em;
 }
 
 .intro-message > h3 {
-letter-spacing:0.0625em; 
+letter-spacing:0.0625em;
 text-transform: uppercase;
 font-size: 1.625em;
 }
@@ -150,7 +150,7 @@ margin-top: 0px;
 
 .parallax {
   position: relative;
-  padding: 80px 0px;  
+  padding: 80px 0px;
   background: linear-gradient(to right, rgba(0,0,0,1),rgba(0,0,0,0.95), rgba(0,0,0,0)), url(../img/scarlett.jpg);
   background-attachment: fixed;
   background-position: center;
@@ -161,7 +161,7 @@ margin-top: 0px;
 .quoted {
   position: relative;
   text-align: center;
-  font-size: 2em; 
+  font-size: 2em;
   color: #ffaa00;
   font-family: 'Josefin Slab', serif;
   font-weight: 400;
@@ -231,6 +231,10 @@ a.about-link:hover
   border-bottom: 1px solid #e7e7e7;*/
 }
 
+#contact-us {
+  background-color: #e7e7e7;
+}
+
 .content-section-a img {
   border-radius: 40px;
 }
@@ -241,6 +245,12 @@ a.about-link:hover
 
 .section-heading-spacer {
   float: left;
+  width: 200px;
+  border-top: 3px solid #ffaa00;
+}
+
+.section-heading-spacer2 {
+  margin: auto;
   width: 200px;
   border-top: 3px solid #ffaa00;
 }

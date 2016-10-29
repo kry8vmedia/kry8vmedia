@@ -1,2 +1,2 @@
 # kry8vmedia.github.io
-infinitum, ignis imaginatione
+The Kry8v Media website | infinitum, ignis imaginatione
