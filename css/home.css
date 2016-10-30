@@ -65,7 +65,7 @@ padding-top: 50px; /* If you're making other pages, make sure there is 50px of p
 padding-bottom: 50px;
 text-align: center;
 color: #f8f8f8;
-background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/mixer-4.jpg);
+background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/bg_1.jpg);
 background-attachment: fixed;
 background-size: cover
 }
@@ -259,7 +259,7 @@ a.about-link:hover
   position: relative;
   padding: 100px 0;
   color: #f8f8f8;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/mixer-4.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/bg_1.jpg);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -319,7 +319,7 @@ footer {
   font-size: 1.1em;
   padding: 50px 0px 80px;
   background-color: #f8f8f8;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/mixer-4.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/bg_1.jpg);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;

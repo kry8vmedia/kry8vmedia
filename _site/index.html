@@ -182,7 +182,7 @@
                         <ul>
                             <li>Instrumental Production</li>
                             <li>Vocal Recording</li>
-                            <li>Mixing & Mastering</li>
+                            <li>Mixing &amp; Mastering</li>
                         </ul>
                     </p>
                     <p class="lead">
@@ -219,83 +219,79 @@
 
         <div class="container">
           <div class="col-sm-8 col-sm-offset-2">
-            <hr class="section-heading-spacer2">
+            <hr class="section-heading-spacer">
             <div class="clearfix"></div>
             <h2 class="section-heading">Contact Us</h2>
-            <div>Do you have any enquiries or comments? Please let us know in the form below.</div>
-            <form id="form1" name="form1" class="wufoo topLabel page" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post" novalidate
-                  action="https://kry8vmedia.wufoo.com/forms/z5shn2k0cjyvck/#public">
-            <div id="foli1" class="notranslate form-group">
-              <div>
-              <input id="Field1" name="Field1" type="email" spellcheck="false" class="form-control field text medium" value="" maxlength="255" tabindex="1" required placeholder="Please enter your email address"/>
-            </div>
-          </div>
-          <div id="foli2" class="notranslate form-group">
-            <input id="Field2" name="Field2" type="text" class="form-control field text fn" value="" size="8" tabindex="2" required placeholder="First Name"/>
-          </div>
-          <div id="foli2" class="notranslate form-group">
-            <input id="Field3" name="Field3" type="text" class="col-sm-3 sol-sm-offset 3 form-control field text ln" value="" size="14" tabindex="3" required placeholder="Last Name"/>
-          </div>
-            <div id="foli4" class="form-group notranslate">
-              <div>
-              <textarea id="Field4" name="Field4" class="field textarea medium"
-              spellcheck="true"
-              rows="10" cols="50"
-              tabindex="4"
-              onkeyup="validateRange(4, 'word');">
-              </textarea>
+            <div><p>Do you have any enquiries or comments? Please let us know in the form below:</p></div>
 
-            <label for="Field4">Maximum Allowed: <var id="rangeMaxMsg4">200</var> words.&nbsp;&nbsp;&nbsp; <em class="currently">Currently Used: <var id="rangeUsedMsg4">0</var> words.</em></label>
-            </div>
+            <form id="contactform" method="POST">
+              <div class="form-group">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="fa fa-user fa-fw"></i></span>
+                  <input class="form-control" type="text" name="name" placeholder="What's your full name?" required />
+                </div>
+              </div>
 
-            <p class="instruct" id="instruct4"><small>What would you like to tell us? (Max. 200 words)</small></p></li>
-            <li id="foli107" class="     ">
-            <fieldset>
-            <!--[if !IE | (gte IE 8)]-->
-            <legend id="title107" class="desc notranslate">
-            Would you like to subscribe to our mailing list?
-            </legend>
-            <!--[endif]-->
-            <!--[if lt IE 8]>
-            <label id="title107" class="desc">
-            Would you like to subscribe to our mailing list?
-            </label>
-            <![endif]-->
-            <div>
-            <span class="subfield">
-            <input id="Field107" name="Field107" type="checkbox" class="field checkbox" value="Yes, sign me up!" tabindex="5"     />
-            <label class="choice" for="Field107">
-            <span class="choice__text notranslate" >Yes, sign me up!</span>
-            <span class="choice__qty">
-            </span>
-            </label>
-            </span>
-            </div>
-            </fieldset>
-            <p class="instruct" id="instruct107"><small class="notranslate">Do you want to receive emails concerning our products, services and special offers?</small></p>
-            </li> <li class="buttons ">
-            <div>
+              <div class="form-group">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="fa fa-envelope-o fa-fw"></i></span>
+                  <input class="form-control" type="email" name="_replyto" placeholder="What's your email address?" required />
+                </div>
+              </div>
 
-                                <input id="saveForm" name="saveForm" class="btTxt submit"
-                type="submit" value="Submit"
-             /><a href="https://master.wufoo.com/forms/m7p0x3/def/field1=kry8vmedia.wufoo.com/forms/contact-us/"
-            target="_blank"
-            style="font-size:85% !important;visibility:visible !important;display:inline !important;
-            background:none !important;border:none !important;color:blue !important;
-            text-indent:0 !important;text-decoration:underline !important;position:static !important;
-            margin:0 !important;padding:0 !important;overflow:none !important
-            width:auto !important;height:auto !important;">Report Abuse</a>
-            </div>
-            </li>
+              <input type="hidden" name="_subject" value="Contact Enquiries" />
 
-            <li class="hide">
-            <label for="comment">Do Not Fill This Out</label>
-            <textarea name="comment" id="comment" rows="1" cols="1"></textarea>
-            <input type="hidden" id="idstamp" name="idstamp" value="sAvz4alt7v4I0HZ8SHO/TfVd4Arq5g97d07uPOnoccY=" />
-            </li>
-            </ul>
+              <div class="form-group">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="fa fa-pencil fa-fw"></i></span>
+                  <textarea class="form-control" rows="5" name="message" placeholder="What would you like us to know?"></textarea>
+                </div>
+              </div>
+
+              <input type="text" name="_gotcha" style="display:none" />
+              <div class="form-group">
+                <button type="submit" class="btn btn-warning" value="Send"><i class="fa fa-send fa-fw"></i>Send
+                </button>
+              </div>
+
             </form>
-        </div>
+
+            <script>
+                var contactform =  document.getElementById('contactform');
+                contactform.setAttribute('action', '//formspree.io/' + 'contact' + '@' + 'krvmedia' + '.' + 'com');
+            </script>
+
+            <!-- Hidden message to show if contact is successful. -->
+            <div id="submit-success" class="collapse">
+              Message received! We'll be in touch.
+            </div>
+
+            <!-- Hidden message to show if user encounters errors. -->
+            <div id="submit-errors" class="collapse">
+              It looks like there was an error submitting the form.
+              Please try again later.
+            </div>
+
+            <script>
+            $("#contactform").validate({
+              submitHandler: function(form) {
+                $.ajax({
+                  ...
+                  },
+                  dataType: "json",
+                  success: function() {
+                    $("#submit-success").fadeIn();
+                    $("#contact-form").fadeOut();
+                  },
+                  error: function() {
+                    $("#submit-errors").fadeIn();
+                  }
+                });
+              }
+            });
+            </script>
+
+          </div>
 
         </div>
         <!-- /.container -->
@@ -398,17 +394,14 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
-    <!-- Custom Animations -->
-    <script src="js/animations.js"></script>
-
     <!-- Typing Plugin -->
     <script src="js/typed.js"></script>
 
+    <!-- Custom Animations -->
+    <script src="js/animations.js"></script>
+
     <!-- Image Loader -->
     <script type="text/javascript" src="js/loadImg.js"></script>
-
-    <!-- Wufoo Form -->
-    <script src="js/wufoo.js"></script>
 
     <!-- Diqus Comment Counter-->
     <script id="dsq-count-scr" src="//kry8v-media.disqus.com/count.js" async></script>
