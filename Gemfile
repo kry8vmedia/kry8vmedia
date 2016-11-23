@@ -39,4 +39,5 @@ group :jekyll_plugins do
    gem 'jekyll-youtube'
    gem 'sass'
    gem 'compass'
+   gem 'jekyll-cloudinary'
 end
