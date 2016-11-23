@@ -35,6 +35,7 @@ GEM
     fastimage (2.0.1)
       addressable (~> 2)
     ffi (1.9.14)
+    ffi (1.9.14-x64-mingw32)
     forwardable-extended (2.6.0)
     gemoji (2.1.0)
     html-pipeline (2.4.2)
@@ -95,6 +96,8 @@ GEM
     multi_json (1.12.1)
     nokogiri (1.6.8.1)
       mini_portile2 (~> 2.1.0)
+    nokogiri (1.6.8.1-x64-mingw32)
+      mini_portile2 (~> 2.1.0)
     pathutil (0.14.0)
       forwardable-extended (~> 2.6)
     public_suffix (2.0.4)
@@ -115,9 +118,11 @@ GEM
       thread_safe (~> 0.1)
     uglifier (3.0.3)
       execjs (>= 0.3.0, < 3)
+    wdm (0.1.1)
 
 PLATFORMS
   ruby
+  x64-mingw32
 
 DEPENDENCIES
   autoprefixer-rails
@@ -135,6 +140,7 @@ DEPENDENCIES
   jemoji
   sass
   uglifier
+  wdm (~> 0.1.0)
 
 RUBY VERSION
    ruby 2.3.1p112
