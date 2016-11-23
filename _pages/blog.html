@@ -1,0 +1,33 @@
+---
+layout: blog
+blog: true
+permalink: /blog
+title: Blog
+pageClass: blog-page
+navigation_weight: 2
+visible_weight: 3
+v-name: Blog
+page-id: blog-page
+---
+
+<div>
+
+  <ul class="post-list list-unstyled">
+    {% for post in site.posts %}
+      <li>
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          <a  role="button" class=" btn btn-primary comments" href="{{ post.url | prepend: site.baseurl | append: "#disqus_thread" }}"></a>
+        </h2>
+        {% assign author = site.data.authors[post.author] %}
+        <p class="read-time">
+          <span class="post-meta">{{ post.date | date: "%a, %-d %B, %Y" }}</span> | {{ page.content | reading_time }} reading time
+        </p>
+        {{ post.excerpt }}
+      </li>
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>

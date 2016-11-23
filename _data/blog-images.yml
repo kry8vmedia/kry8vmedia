@@ -1,0 +1,6 @@
+blog-image:
+    id: 1
+    title: Blog Image
+    caption: Collection Test
+    img-src: /img/posts/blog-image.jpg
+    alt: Collection Test

@@ -1,0 +1,86 @@
+/*$(window).scroll(function()
+{
+	if ($(this).scrollTop() > 800)
+	{
+		$('.affix').fadeIn(500);
+	} else
+	{
+		$('.affix').fadeIn(500);
+	}
+});*/
+
+//VISIBILITY ANIMATIONS
+
+//Navbar Opacity
+$(window).scroll(function() {
+    if($(this).scrollTop() > 500) {
+        $('#main-nav').addClass('opaque');
+    } else {
+        $('#main-nav').removeClass('opaque');
+    }
+});
+
+//Go Up Arrow
+/*var offset = 600;
+var duration = 300;
+$(window).scroll(function() {
+    if($(this).scrollTop() > offset) {
+        $('#go-up').addClass('opaque');
+    } else {
+        $('#go-up').removeClass('opaque');
+    }
+});
+
+$('#go-up').click(function(event) {
+  event.preventDefault();
+  $('html, body').animate({scrollTop: 0}, duration);
+  return false;
+});*/
+
+
+//SMOOTH SCROLL
+$(function() {
+    $('#scrolled-one').smoothScroll(1000);
+   });
+ $(function() {
+    $('#scrolled-two').smoothScroll(1000);
+   });
+$(function() {
+    $('#go-up').smoothScroll(1000);
+   });
+$(function() {
+    $('#main-nav').smoothScroll(1000);
+   });
+$(function() {
+    $('#arrow').smoothScroll(1000);
+   });
+$(function() {
+    $('#foot').smoothScroll(1000);
+   });
+
+  
+/*DROPDOWN ANIMATIONS*/
+// ADD SLIDEDOWN ANIMATION TO DROPDOWN //
+$('.dropdown').on('show.bs.dropdown', function(e){
+  $(this).find('.dropdown-menu').first().stop(true, true).slideDown();
+});
+
+// ADD SLIDEUP ANIMATION TO DROPDOWN //
+$('.dropdown').on('hide.bs.dropdown', function(e){
+  $(this).find('.dropdown-menu').first().stop(true, true).slideUp();
+});
+
+/*//Wait for Image to Load
+$(function() {
+	$('img').imgPreload()
+})*/
+
+/*
+//TYPING ANIMATION
+$(function(){
+		$("#typed").typed({
+			stringsElement: $('#typed-strings'),
+			typeSpeed: 20,
+			startDelay: 2000,
+		});
+	});*/

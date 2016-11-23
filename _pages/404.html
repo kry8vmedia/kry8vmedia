@@ -1,0 +1,33 @@
+---
+no-footer-nav: true
+bodybg: error
+title: KABOOM! | Kry8v Media
+extra: padding
+permalink: /404
+---
+
+<div class="container">
+
+  <div class="row">
+    <div class="col-sm-6 col-sm-offset-3 text">
+      <img src="/img/404.png" alt="404 Image" class="img-responsive" />
+      <h1>OUCH!</h1>
+      <p>We blew our minds looking for the page you requested. We just can't seem to find it.</p>
+      <p>Perhaps we can interest you in one of these:</p>
+      <ul class="list-inline">
+        <li><a href="{{ site.baseurl }}/#header">Home</a></li>
+        {% assign navigation_pages = site.html_pages | sort: 'navigation_weight' %}
+        {% for p in navigation_pages %}
+          {% if p.navigation_weight %}
+            <li>
+              <a href="{{ p.url }}" {% if p.url == page.url %} class="active" {% endif %}>{{ p.title }}</a>
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+
+    </div>
+
+  </div><!-- /.row-->
+
+</div><!-- /.container -->

@@ -1,0 +1,36 @@
+<!-- Navigation -->
+{% if page.home %}
+	<nav id="main-nav" class="main-nav navbar-inverse" data-spy="affix" data-offset-top="639" role="navigation">
+{% else %}
+	<nav id="main-nav" class="main-nav navbar-inverse navbar-fixed-top default-nav" role="navigation">
+{% endif %}
+		<div class="container topnav">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand topnav" href="/#header"><img class="branding" src="{{ site.baseurl }}/img/branding.png" title="Kry8v Media Icon" alt="Kry8v Media Icon" /></a>
+			</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse">
+				<ul class="nav navbar-nav navbar-right">
+					{% assign navigation_pages = site.html_pages | sort: 'navigation_weight' %}
+					{% for p in navigation_pages %}
+						{% if p.navigation_weight %}
+							<li>
+								<a href="{{ p.url }}" {% if p.url == page.url %} class="active" {% endif %}>{{ p.title }}</a>
+							</li>
+						{% endif %}
+					{% endfor %}
+				</ul>
+			</div>
+			<!-- /.navbar-collapse -->
+		</div>
+		<!-- /.container -->
+		<div class="uline-div"><hr class="uline"></div>
+	</nav>
+	<!-- /.Navigation -->

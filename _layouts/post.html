@@ -1,0 +1,51 @@
+---
+layout: blog
+post: true
+page-id: post-page
+---
+{% assign author = site.data.authors[page.author] %}
+<br>
+<br>
+
+<p>
+  <a target="_blank" href="https://twitter.com/{{ site.data.authors[page.author].twitter }}"><img class="img-circle author-pic" src="{{ author.picture }}" alt="{{ site.data.authors[page.author].name }}" title="{{ site.data.authors[page.author].name }}" /></a> {{ author.display_name }} posted this on <span class="post-meta">{{ page.date | date: "%a, %-d %B, %Y" }}</span>
+</p>
+
+<h2>
+  {{ page.title }}
+  <a  role="button" class=" btn btn-primary comments" href="{{ page.url | prepend: site.baseurl | append: "#disqus_thread" }}"></a>
+</h2>
+<p class="read-time">{{ page.content | reading_time }} reading time</p>
+
+
+{% include post-header.html %}
+{{ content }}
+<br>
+
+{% if page.tags.size > 0 %}
+  <p><small><span><i class="fa fa-tags fa-fw"></i></span>
+      {% for tag in page.tags  %}
+      <a href="{{ site.url }}/archive/tags/{{ tag }}">{{ tag }}</a>
+      {% endfor %}
+  </small></p>
+{% endif %}
+
+{% if page.categories.size > 0 %}
+  <p><small><span><i class="fa fa-folder-open fa-fw"></i></span>
+      {% for category in page.categories  %}
+      <a href="{{ site.url }}/archive/categories/{{ category }}">{{ category }}</a>
+      {% endfor %}
+  </small></p>
+{% endif %}
+
+{% if page.tags.size > 0 or page.categories.size > 0%}
+  <br>
+{% endif %}
+
+{% include share.html %}
+
+{% include related-posts.html %}
+
+{% if page.comments %}
+  {% include disqus.html %}
+{% endif %}
