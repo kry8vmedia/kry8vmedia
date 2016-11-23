@@ -13,24 +13,132 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Kry8v Media | Infinitum Ignis Imaginatione
-email: info@krvmedia.com
+include:
+  - _pages
+  - _img
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  
+collections:
+ 
+title: Kry8v Media
+email: contact@krvmedia.com
 personal-email: c.mulenga@krvmedia.com
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
+  We pursue creative arts that innovate, inspire and ignite infinite imagination.
+#baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://krvmedia.com" # the base hostname & protocol for your site, e.g. http://example.com
+twitter:
+  username: kry8vmedia
+github_username: kry8vmedia
 twitter_username: kry8vmedia
-github_username:  kry8vmedia
-facebook_url: kry8v
+google_site_verification: vWavgrIUW8L9zzRbSS3PUZtQrlOeedCKSX2szz8QjOg
+logo: /img/kry8v-logo.png
+
+social:
+  name: Kry8v Media
+  links:
+    - https://twitter.com/kry8vmedia
+    - https://www.facebook.com/kry8v
+    - https://instagram.com/kry8vmedia
+    - https://soundcloud.com/kry8vmedia
+
+image:
+  twitter: /img/twitter-card.jpg
+  facebook: /img/facebook-ad.jpg
+  height: 100
+  width: 100
+
+#Compress HTML
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+  endings: []
+  ignore:
+    envs: []
+  blanklines: false
+  profile: false
+  startings: []
+
+#Assets
+assets:
+  autoprefixer:
+      browsers: ["last 2 versions","> 5%","IE 9"]
+  compress:
+    css: sass
+    js: uglifier
+  cache: .asset-cache
+  cache_type: filesystem
+  prefix: "/assets"
+  digest: true
+  sources:
+    - "_assets/css"
+    - "_assets/js"
+  features:
+    liquid: false
+    integrity: false
+    automatic_img_size: true 
+    automatic_img_alt : true 
+
+#Prefixer
+
+
+excerpt_separator: <!--more-->
+permalink: /:year/:month/:slug
+timezone: Africa/Lusaka
+jekyll-mentions: https://twitter.com
+
+#gems:
+#  - jemoji
+#  - jekyll-seo-tag
+#  - jekyll-feed
+
+jekyll-archives:
+  enabled: all
+  layouts:
+    day: year-archive
+    year: year-archive
+    month: month-archive
+    tag: tag-archive
+    category: category-archive
+  permalinks:
+    year: /archive/:year/
+    month: /archive/:year/:month/
+    category: /archive/categories/:name/
+    tag:  /archive/tags/:name/
 
 # Build settings
 markdown: kramdown
-theme: minima
-gems:
-  - jekyll-feed
-exclude:
-  - Gemfile
-  - Gemfile.lock
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: chanda
+      published: true
+      comments: true
+  -
+    scope:
+      path: ""
+      type: "drafts"
+    values:
+      layout: "post"
+      author: chanda
+
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+
+  -
+    scope:
+      path: ""
+    values:
+      image: /img/blog-image.jpg

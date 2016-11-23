@@ -7,12 +7,32 @@ GEM
       minitest (~> 5.1)
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
-    addressable (2.4.0)
+    addressable (2.5.0)
+      public_suffix (~> 2.0, >= 2.0.2)
+    autoprefixer-rails (6.5.3)
+      execjs
+    breakpoint (2.7.0)
+      sass (~> 3.3)
+      sassy-maps (< 1.0.0)
+    chunky_png (1.3.8)
     colorator (1.1.0)
+    compass (1.0.3)
+      chunky_png (~> 1.2)
+      compass-core (~> 1.0.2)
+      compass-import-once (~> 1.0.5)
+      rb-fsevent (>= 0.9.3)
+      rb-inotify (>= 0.9)
+      sass (>= 3.3.13, < 3.5)
+    compass-core (1.0.3)
+      multi_json (~> 1.0)
+      sass (>= 3.3.0, < 3.5)
+    compass-import-once (1.0.5)
+      sass (>= 3.2, < 3.5)
     concurrent-ruby (1.0.2)
+    execjs (2.7.0)
     extras (0.1.0)
       forwardable-extended (~> 2.5)
-    fastimage (2.0.0)
+    fastimage (2.0.1)
       addressable (~> 2)
     ffi (1.9.14)
     forwardable-extended (2.6.0)
@@ -21,7 +41,7 @@ GEM
       activesupport (>= 2)
       nokogiri (>= 1.4)
     i18n (0.7.0)
-    jekyll (3.3.0)
+    jekyll (3.3.1)
       addressable (~> 2.4)
       colorator (~> 1.0)
       jekyll-sass-converter (~> 1.0)
@@ -44,69 +64,77 @@ GEM
     jekyll-email-protect (1.0.3)
     jekyll-feed (0.8.0)
       jekyll (~> 3.3)
-    jekyll-language-plugin (1.3.3)
     jekyll-mentions (1.2.0)
       activesupport (~> 4.0)
       html-pipeline (~> 2.3)
       jekyll (~> 3.0)
-    jekyll-paginate (1.1.0)
-    jekyll-sass-converter (1.4.0)
+    jekyll-sass-converter (1.5.0)
       sass (~> 3.4)
-    jekyll-seo-tag (2.0.0)
-      jekyll (~> 3.1)
+    jekyll-seo-tag (2.1.0)
+      jekyll (~> 3.3)
     jekyll-sitemap (0.12.0)
       jekyll (~> 3.3)
     jekyll-watch (1.5.0)
       listen (~> 3.0, < 3.1)
+    jekyll-youtube (1.0.0)
+      jekyll
     jemoji (0.7.0)
       activesupport (~> 4.0)
       gemoji (~> 2.0)
       html-pipeline (~> 2.2)
       jekyll (>= 3.0)
     json (1.8.3)
-    kramdown (1.12.0)
+    kramdown (1.13.0)
     liquid (3.0.6)
     listen (3.0.8)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
     mercenary (0.3.6)
     mini_portile2 (2.1.0)
-    minima (2.0.0)
     minitest (5.9.1)
+    multi_json (1.12.1)
     nokogiri (1.6.8.1)
       mini_portile2 (~> 2.1.0)
     pathutil (0.14.0)
       forwardable-extended (~> 2.6)
-    rack (1.6.4)
+    public_suffix (2.0.4)
+    rack (1.6.5)
     rb-fsevent (0.9.8)
     rb-inotify (0.9.7)
       ffi (>= 0.5.0)
     rouge (1.11.1)
     safe_yaml (1.0.4)
     sass (3.4.22)
+    sassy-maps (0.4.0)
+      sass (~> 3.3)
     sprockets (3.6.3)
       concurrent-ruby (~> 1.0)
       rack (> 1, < 3)
     thread_safe (0.3.5)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
+    uglifier (3.0.3)
+      execjs (>= 0.3.0, < 3)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  jekyll (= 3.3.0)
+  autoprefixer-rails
+  breakpoint
+  compass
+  jekyll
   jekyll-archives
   jekyll-assets
   jekyll-email-protect
   jekyll-feed (~> 0.6)
-  jekyll-language-plugin
   jekyll-mentions
-  jekyll-paginate
   jekyll-seo-tag
   jekyll-sitemap
+  jekyll-youtube
   jemoji
-  minima (~> 2.0)
+  sass
+  uglifier
 
 RUBY VERSION
    ruby 2.3.1p112
