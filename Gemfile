@@ -21,6 +21,7 @@ gem "jekyll"
 # gem "github-pages", group: :jekyll_plugins
 
 gem 'jekyll-assets'
+gem 'bootstrap-sass', '~> 3.3.6'
 gem 'breakpoint'
 gem 'wdm', '~> 0.1.0' if Gem.win_platform?
 gem 'autoprefixer-rails'
@@ -28,16 +29,16 @@ gem 'uglifier'
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
-   gem "jekyll-feed", "~> 0.6"
-   gem 'jekyll-archives'
-   gem 'jekyll-email-protect'
-   gem 'jekyll-mentions'
-   gem 'jekyll-seo-tag'
-   gem 'jekyll-sitemap'
-   gem 'jemoji'
-   #gem 'jekyll-minifier'
-   gem 'jekyll-youtube'
-   gem 'sass'
-   gem 'compass'
-   gem 'jekyll-cloudinary'
+    gem "jekyll-feed", "~> 0.6"
+    gem 'jekyll-archives'
+    gem 'jekyll-email-protect'
+    gem 'jekyll-mentions'
+    gem 'jekyll-seo-tag'
+    gem 'jekyll-sitemap'
+    gem 'jemoji'
+    #gem 'jekyll-minifier'
+    gem 'jekyll-youtube'
+    gem 'sass'
+    gem 'compass'
+    gem 'jekyll-cloudinary'
 end
