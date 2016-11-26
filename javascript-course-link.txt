@@ -1,4 +1,0 @@
-
-/* JAVASCRIPT COURSE LINK
-http://www.makerbased.com/courses/javascript-beta.html?ref=ABC123
-*/

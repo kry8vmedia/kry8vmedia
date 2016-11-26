@@ -41,4 +41,5 @@ group :jekyll_plugins do
     gem 'sass'
     gem 'compass'
     gem 'jekyll-cloudinary'
+    gem 'jekyll-coffeescript'
 end
