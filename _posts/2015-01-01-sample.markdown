@@ -4,7 +4,7 @@ title:  "Tester!"
 date:   2015-01-01 19:09:02 +0200
 categories: ['Default', 'Lifestyle', 'update']
 tags: ['sample', 'banana']
-image: /img/blog-image.jpg
+img: img/store-1
 comments: true
 post: true
 ---

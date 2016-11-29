@@ -2,9 +2,11 @@
 gems:
   - jekyll-assets
   - jekyll-cloudinary
-  - jekyll-coffeescript
   - jekyll-seo-tag
+  - jekyll-coffeescript
   - jekyll-feed
+  - jekyll-autoprefixer
+  - breakpoint
 
 include:
   - _pages
@@ -16,10 +18,10 @@ exclude:
   - README.md
   - LICENSE.md
   - Gemfile*
-  - Rakefile
   - uninstall all gems.txt
   - Netlify CMS.md
-  - Rakefile.rb
+  - Rakefile*
+  - style.css
 
 markdown: kramdown
 
@@ -88,42 +90,40 @@ permalink: /:year/:month/:slug
 timezone: Africa/Lusaka
 jekyll-mentions: https://twitter.com
 
-#Compress HTML
-compress_html:
-  clippings: all
-  comments: ["<!-- ", " -->"]
-  endings: []
-  ignore:
-    envs: []
-  blanklines: false
-  profile: false
-  startings: []
+#HTML compress
+jekyll-press:
+  exclude: 
+    - 'atom.xml'
+    - '*.js'
+    - '*.css' 
+  js_options: {}
+  css_options: {}
+  html_options: {}
 
 #Assets
 sass:
- sass_dir: _assets/sass
- css_dir: _assets/css
- style:  compressed
-
-assets:
+  sass_dir: _sass
+  css_dir: css
+  style:  compressed
   autoprefixer:
-      browsers: ["last 2 versions","> 5%","IE 9"]
+      browsers: ["last 5 versions","> 10%","IE 9"]
+      
+assets:
   compress:
-    css: sass
+    css: false
     js: uglifier
   cache: .asset-cache
   cache_type: filesystem
   prefix: "/assets"
   digest: true
   sources:
-    - "_assets/sass"
-    - "_assets/css"
     - "_assets/js"
   features:
     liquid: false
     integrity: false
     automatic_img_size: true 
     automatic_img_alt : true 
+  gzip: [ text/css, application/javascript ]
 
 #Jekyll Archives settings
 jekyll-archives:
@@ -148,9 +148,9 @@ cloudinary:
     presets:
     default:
       min_width: 320
-      max_width: 1600
+      max_width: 1920
       fallback_max_width: 800
-      steps: 5
+      steps: 6
       sizes: '(min-width: 50rem) 50rem, 90vw'
       figure: always
     logo:

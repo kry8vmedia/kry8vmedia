@@ -1,0 +1,48 @@
+#post-page  {
+    .content { padding-top: 7.5em; }
+    &.blog-sidebar {
+        padding-top: 200px;
+    }
+    .comments {
+        margin: 0 0 20px;
+        display: inline-block;
+    }
+    #disqus_thread {
+        padding-top: 50px;
+    }
+    .related-rectangle {
+        border-top: 3px solid $dark-gray;
+        padding: 15px 0;
+        margin: 0 auto 20px;
+    }
+    #share-box {
+        margin-bottom: 20px;
+        .share-button {
+            margin: 0;
+            padding: 10px;
+            opacity: 0.8;
+            &:hover {
+                opacity: 1;
+            }
+        }
+        .fa-facebook-official {
+            color: $facebook-color;
+        }
+        .fa-google-plus {
+            color: $google-color; 
+        }
+        .fa-linkedin {
+            color: $linkedin-color;
+        }
+        .fa-envelop {
+            color: $envelope-color
+        }
+        .fa-reddit {
+            color: $reddit-color;
+        }
+        .fa-twitter {
+            color: $twitter-color;
+        }
+    }
+}
+

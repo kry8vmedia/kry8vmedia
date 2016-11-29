@@ -1,6 +1,3 @@
----
-layout: compress
----
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,13 +7,13 @@ layout: compress
   <!-- setTimeout(function() { window.scrollTo(0, 1) }, 100); -->
   <body id="{{ page.page-id }}" class="{{ page.bodybg }}" >
 
-    <div id="scroller"></div>
+    <div id="destination-top"></div>
 
     {% unless page.no-footer-nav %}
       {% include navbar.html %}
     {% endunless %}
 
-    <div id="scrolled-one" class="content {{ page.extra }} {{ page.page-div }}">
+    <div class="content {{ page.extra }} {{ page.page-div }}">
       {{ content }}
     </div>
 
@@ -26,5 +23,6 @@ layout: compress
     {% endunless %}
 
     {% include scripts.html %}
+    
   </body>
 </html>

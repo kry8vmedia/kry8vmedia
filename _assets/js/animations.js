@@ -1,22 +1,10 @@
-/*$(window).scroll(function()
-{
-	if ($(this).scrollTop() > 800)
-	{
-		$('.affix').fadeIn(500);
-	} else
-	{
-		$('.affix').fadeIn(500);
-	}
-});*/
-
 //VISIBILITY ANIMATIONS
-
 //Navbar Opacity
 $(window).scroll(function() {
     if($(this).scrollTop() > 500) {
-        $('#main-nav').addClass('opaque');
+        $('#home-nav').addClass('opaque');
     } else {
-        $('#main-nav').removeClass('opaque');
+        $('#home-nav').removeClass('opaque');
     }
 });
 

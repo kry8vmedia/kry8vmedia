@@ -1,8 +1,8 @@
 <!-- Navigation -->
 {% if page.home %}
-	<nav id="main-nav" class="main-nav navbar-inverse" data-spy="affix" data-offset-top="639" role="navigation">
+	<nav id="home-nav" class="main-nav navbar-inverse" data-spy="affix" data-offset-top="639" role="navigation">
 {% else %}
-	<nav id="main-nav" class="main-nav navbar-inverse navbar-fixed-top default-nav" role="navigation">
+	<nav id="page-nav" class="main-nav navbar-inverse navbar-fixed-top default-nav" role="navigation">
 {% endif %}
 		<div class="container topnav">
 			<!-- Brand and toggle get grouped for better mobile display -->
@@ -13,7 +13,7 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand topnav" href="/#header"><img class="branding" src="{{ site.baseurl }}/img/branding.png" title="Kry8v Media Icon" alt="Kry8v Media Icon" /></a>
+				<a class="navbar-brand topnav" href="/#header"><img data-src="https://res.cloudinary.com/krvmedia/c_limit,w_auto,dpr_auto,f_auto/logos/web-logo" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="cld-responsive branding" title="Kry8v Media Web Logo" alt="Kry8v Media Web Logo" /></a>
 			</div>
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse">
@@ -31,6 +31,6 @@
 			<!-- /.navbar-collapse -->
 		</div>
 		<!-- /.container -->
-		<div class="uline-div"><hr class="uline"></div>
+		<span class="uline-div"><hr class="uline"></span>
 	</nav>
 	<!-- /.Navigation -->

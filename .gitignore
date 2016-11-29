@@ -1,5 +1,6 @@
 _site
 *.css
+.asset-cache
 .sass-cache
 .jekyll-metadata
 *~

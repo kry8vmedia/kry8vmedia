@@ -1,0 +1,21 @@
+//Back-to-top arrow
+#go-up {
+    opacity: 0;
+    transition: opacity 1s ease 0s;
+
+    &.opaque {
+        opacity: 0.3;
+        transition: opacity 2.5s ease 0s;
+    }
+    a {
+        position: fixed;
+        right: 5%;
+        bottom: 10px;
+        z-index: 150;
+    
+        &:hover, &:focus {
+            color: $primary-color;
+            opacity: 1;
+        }
+    }
+}

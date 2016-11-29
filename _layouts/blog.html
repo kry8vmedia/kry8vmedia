@@ -1,20 +1,23 @@
 ---
 layout: default
 ---
-<div id="scroller" class="container">
+    <div class="blogger content">
+      <div class="container">
 
-  <div class="row">
+        <div class="row">
 
-    <div class="col-sm-8 blog-main">
+          <div class="article">
 
-      {{ content }}
+            {{ content }}
 
-    </div><!-- /.blog-main -->
+          </div><!-- /.article -->
+          
+          {% include sidebar.html %}
 
-    {% include sidebar.html %}
+        </div><!-- /.row -->
 
-  </div><!-- /.row -->
+      </div><!-- /.container -->
+    </div>
 
-</div><!-- /.container -->
+    {% include arrow.html %}
 
-{% include arrow.html dest="#scroller" %}

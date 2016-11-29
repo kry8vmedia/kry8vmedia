@@ -1,26 +1,23 @@
 ---
 layout: blog
 post: true
-page-id: post-page
 ---
-{% assign author = site.data.authors[page.author] %}
-<br>
-<br>
 
-<p>
-  <a target="_blank" href="https://twitter.com/{{ site.data.authors[page.author].twitter }}"><img class="img-circle author-pic" src="{{ author.picture }}" alt="{{ site.data.authors[page.author].name }}" title="{{ site.data.authors[page.author].name }}" /></a> {{ author.display_name }} posted this on <span class="post-meta">{{ page.date | date: "%a, %-d %B, %Y" }}</span>
+<div class="post-image">
+  <img data-src="https://res.cloudinary.com/krvmedia/c_fill,w_auto,dpr_auto,f_auto,q_auto/{{ page.img }}" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="cld-responsive img-responsive featured-image" title="{{ page.title }}" alt="{{ page.title }}" />
+  <h1>{{ page.title }}</h1>
+</div>
+
+{% assign author = site.data.authors[page.author] %}
+<br />
+<br />
+
+<p class="text-center text-capitalize post-spacing">
+  <a target="_blank" href="https://twitter.com/{{ site.data.authors[page.author].twitter }}"><img class="img-circle" style="width: 4.7em;" src="{{ author.picture }}" alt="{{ site.data.authors[page.author].name }}" title="{{ site.data.authors[page.author].name }}" /></a> {{ author.display_name }} posted this on <span class="post-meta">{{ page.date | date: "%a, %-d %B, %Y" }}</span> | {{ page.content | reading_time }} reading time | <a href="{{ page.url | prepend: site.baseurl | append: "#disqus_thread" }}"></a>
 </p>
 
-<h2>
-  {{ page.title }}
-  <a  role="button" class=" btn btn-primary comments" href="{{ page.url | prepend: site.baseurl | append: "#disqus_thread" }}"></a>
-</h2>
-<p class="read-time">{{ page.content | reading_time }} reading time</p>
-
-
-{% include post-header.html %}
 {{ content }}
-<br>
+<br />
 
 {% if page.tags.size > 0 %}
   <p><small><span><i class="fa fa-tags fa-fw"></i></span>
@@ -39,7 +36,7 @@ page-id: post-page
 {% endif %}
 
 {% if page.tags.size > 0 or page.categories.size > 0%}
-  <br>
+  <br />
 {% endif %}
 
 {% include share.html %}
@@ -49,3 +46,4 @@ page-id: post-page
 {% if page.comments %}
   {% include disqus.html %}
 {% endif %}
+

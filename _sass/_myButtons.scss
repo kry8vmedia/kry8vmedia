@@ -1,0 +1,19 @@
+//Buttons
+.buy-button {
+    @extend %buttons;
+    font-size: 1.125em;
+    margin: 0 25%;
+}
+
+.article .btn {
+    @extend %buttons;
+    font-size: 0.4em;
+    background-color: darken($secondary-color, 20%); //#337ab7
+    border-color: darken($tertiary-color, 20%); //#2e6da4
+    margin-bottom: 20px;
+}
+
+.subscribe-button {
+    @extend %buttons;
+    margin: 10px 0;
+}

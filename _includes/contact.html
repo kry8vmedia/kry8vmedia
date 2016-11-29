@@ -1,13 +1,12 @@
 <!-- CONTACT US -->
-<div id ="contact-us" class="content-section-b text">
+<div id ="contact-us" class="section-b">
 
   <div class="container">
-    <div class="col-sm-12">
-      <hr class="section-heading-spacer">
+    <div class="full-width-column">
+      <hr class="section-heading-spacer {% if page.pageClass == "contact-page" %}hidden{% endif %}">
       <div class="clearfix"></div>
-      <h2 class="section-heading">Contact Us</h2>
-      <div><p>Do you have any enquiries or comments? Please let us know using the form below:</p></div>
-
+      <h2 class="section-heading {% if page.pageClass == "contact-page" %}hidden{% endif %}">Contact Us</h2>
+      <div {% if page.pageClass == "contact-page" %}class="hidden"{% endif %}><p>Do you have any enquiries or comments? Please let us know using the form below:</p></div>
       {% include contact-bare.html%}
     </div>
 
