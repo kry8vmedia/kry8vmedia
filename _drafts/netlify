@@ -2,10 +2,8 @@ var netlify = require('gulp-netlify')
 gulp.task('deploy', function () {
   gulp.src('./public/**/*')
     .pipe(netlify({
-      site_id: 3ac05259-166f-4501-b6f8-be698f71f53d,
-      access_token: db78f12123acf95c208c1e87fb803b08c1dafef8f70c7960365d1ac0008d84d8
-    }))
-})
+      site_id: 
+      access_token: 
 
 npm install gulp-netlify --save
 
