@@ -11,25 +11,25 @@
 
 @mixin bg-image($image-path, $start-alpha: 0.9, $end-alpha: 0.9) {
     @include breakpoint($grey-matter){
-        background:  linear-gradient(rgba(0, 0, 0, $start-alpha), rgba(0, 0, 0, $end-alpha)), url('https://res.cloudinary.com/krvmedia/w_480,q_auto,f_auto,dpr_auto,c_fill/#{$image-path}');
+        background:  linear-gradient(rgba(0, 0, 0, $start-alpha), rgba(0, 0, 0, $end-alpha)), url('https://res.cloudinary.com/krvmedia/w_480,q_60,f_auto,dpr_auto,c_fit/#{$image-path}');
     }
     @include breakpoint($echo){
-        background:  linear-gradient(rgba(0, 0, 0, $start-alpha), rgba(0, 0, 0, $end-alpha)), url('https://res.cloudinary.com/krvmedia/w_768,q_auto,f_auto,dpr_auto,c_fill/#{$image-path}');
+        background:  linear-gradient(rgba(0, 0, 0, $start-alpha), rgba(0, 0, 0, $end-alpha)), url('https://res.cloudinary.com/krvmedia/w_768,q_60,f_auto,dpr_auto,c_fit/#{$image-path}');
     }
     @include breakpoint ($ben){
-        background:  linear-gradient(rgba(0, 0, 0, $start-alpha), rgba(0, 0, 0, $end-alpha)), url('https://res.cloudinary.com/krvmedia/w_1024,q_auto,f_auto,dpr_auto,c_fill/#{$image-path}');
+        background:  linear-gradient(rgba(0, 0, 0, $start-alpha), rgba(0, 0, 0, $end-alpha)), url('https://res.cloudinary.com/krvmedia/w_1024,q_60,f_auto,dpr_auto,c_fit/#{$image-path}');
     }
     @include breakpoint ($gwen){
-        background:  linear-gradient(rgba(0, 0, 0, $start-alpha), rgba(0, 0, 0, $end-alpha)), url('https://res.cloudinary.com/krvmedia/w_1440,q_auto,f_auto,dpr_auto,c_fill/#{$image-path}');
+        background:  linear-gradient(rgba(0, 0, 0, $start-alpha), rgba(0, 0, 0, $end-alpha)), url('https://res.cloudinary.com/krvmedia/w_1440,q_60,f_auto,dpr_auto,c_fit/#{$image-path}');
     }
     @include breakpoint ($four-arms){
-        background:  linear-gradient(rgba(0, 0, 0, $start-alpha), rgba(0, 0, 0, $end-alpha)), url('https://res.cloudinary.com/krvmedia/w_1920,q_auto,f_auto,dpr_auto,c_fill/#{$image-path}');
+        background:  linear-gradient(rgba(0, 0, 0, $start-alpha), rgba(0, 0, 0, $end-alpha)), url('https://res.cloudinary.com/krvmedia/w_1920,q_60,f_auto,dpr_auto,c_fit/#{$image-path}');
     }
     @include breakpoint ($way-big){
-        background:  linear-gradient(rgba(0, 0, 0, $start-alpha), rgba(0, 0, 0, $end-alpha)), url('https://res.cloudinary.com/krvmedia/w_2560,q_auto,f_auto,dpr_auto,c_fill/#{$image-path}');
+        background:  linear-gradient(rgba(0, 0, 0, $start-alpha), rgba(0, 0, 0, $end-alpha)), url('https://res.cloudinary.com/krvmedia/w_2560,q_60,f_auto,dpr_auto,c_fit/#{$image-path}');
     }
     @include breakpoint ($ridiculous){
-        background:  linear-gradient(rgba(0, 0, 0, $start-alpha), rgba(0, 0, 0, $end-alpha)), url('https://res.cloudinary.com/krvmedia/w_auto,q_auto,f_auto,dpr_auto,c_fill/#{$image-path}');
+        background:  linear-gradient(rgba(0, 0, 0, $start-alpha), rgba(0, 0, 0, $end-alpha)), url('https://res.cloudinary.com/krvmedia/w_auto,q_60,f_auto,dpr_auto,c_fit/#{$image-path}');
     }
     background-attachment: fixed;
     background-size: cover;
