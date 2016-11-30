@@ -1,0 +1,13 @@
+//Table
+#price-table { 
+    td:nth-child(2) {
+        font-weight: bold;
+    }
+    .hyphenated {
+        li {text-indent: 20px; }
+        > li:before { content: '- '; }
+    }
+}
+
+@-moz-document url-prefix() { fieldset { display: tebale-cell; } }
+

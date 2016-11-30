@@ -1,0 +1,56 @@
+---
+layout: jumbo
+no-footer: true
+permalink: /sitemap
+headline: Sitemap
+description: Never get lost on our site! Find your way below
+title: Sitemap
+page-id: jumbo-page
+pageClass: site-page
+---
+
+<div class="section-a">
+    <div class="container bottom-padding">
+        <div class="row">
+
+            <div class="half-width-column">
+
+                <h2 style="text-align: left;">Pages</h2>
+                <hr class="section-heading-spacer">
+                    <br>
+                    <br>
+                    <ul style="list-style-type: square;">
+                        {% assign visible_pages = site.html_pages | sort: 'visible_weight' %}
+                        {% for p in visible_pages %}
+                            {% if p.visible_weight %}
+                                <li><a href="{{ p.url }}">{{ p.v-name }}</a></li>
+                            {% endif %}
+                        {% endfor %}
+                    </ul>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="section-b">
+    <div class="container bottom-padding">
+        <div class="row">
+
+            <div class="half-width-column">
+
+                <h2 style="text-align: left;">Blog Posts</h2>
+                <hr class="section-heading-spacer">
+                <br>
+                <br>
+                {% for post in site.posts %}
+                    <ul style="list-style-type: square;">
+                        <li><a href="{{ site.url }}/{{ post.url }}">{{ post.title }}</a></li>
+                    </ul>
+                {% endfor %}
+
+            </div>
+        </div>
+    </div>
+</div>
+

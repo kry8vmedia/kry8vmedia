@@ -1,0 +1,42 @@
+//Typography
+@mixin text-shadow($alpha-amount: 0.6) { text-shadow: 2px 2px 3px rgba(0, 0, 0, $alpha-amount); }
+
+//Images
+@mixin bg-settings {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@mixin bg-image($image-path, $start-alpha: 0.9, $end-alpha: 0.9) {
+    @include breakpoint($grey-matter){
+        background:  linear-gradient(rgba(0, 0, 0, $start-alpha), rgba(0, 0, 0, $end-alpha)), url('https://res.cloudinary.com/krvmedia/w_480,q_auto,f_auto,dpr_auto,c_fill/#{$image-path}');
+    }
+    @include breakpoint($echo){
+        background:  linear-gradient(rgba(0, 0, 0, $start-alpha), rgba(0, 0, 0, $end-alpha)), url('https://res.cloudinary.com/krvmedia/w_768,q_auto,f_auto,dpr_auto,c_fill/#{$image-path}');
+    }
+    @include breakpoint ($ben){
+        background:  linear-gradient(rgba(0, 0, 0, $start-alpha), rgba(0, 0, 0, $end-alpha)), url('https://res.cloudinary.com/krvmedia/w_1024,q_auto,f_auto,dpr_auto,c_fill/#{$image-path}');
+    }
+    @include breakpoint ($gwen){
+        background:  linear-gradient(rgba(0, 0, 0, $start-alpha), rgba(0, 0, 0, $end-alpha)), url('https://res.cloudinary.com/krvmedia/w_1440,q_auto,f_auto,dpr_auto,c_fill/#{$image-path}');
+    }
+    @include breakpoint ($four-arms){
+        background:  linear-gradient(rgba(0, 0, 0, $start-alpha), rgba(0, 0, 0, $end-alpha)), url('https://res.cloudinary.com/krvmedia/w_1920,q_auto,f_auto,dpr_auto,c_fill/#{$image-path}');
+    }
+    @include breakpoint ($way-big){
+        background:  linear-gradient(rgba(0, 0, 0, $start-alpha), rgba(0, 0, 0, $end-alpha)), url('https://res.cloudinary.com/krvmedia/w_2560,q_auto,f_auto,dpr_auto,c_fill/#{$image-path}');
+    }
+    @include breakpoint ($ridiculous){
+        background:  linear-gradient(rgba(0, 0, 0, $start-alpha), rgba(0, 0, 0, $end-alpha)), url('https://res.cloudinary.com/krvmedia/w_auto,q_auto,f_auto,dpr_auto,c_fill/#{$image-path}');
+    }
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+@mixin bg-overlay($alpha: 0.6, $alpha2: 0.6) {
+    background:  linear-gradient(rgba(0, 0, 0, $alpha), rgba(0, 0, 0, $alpha2));
+}

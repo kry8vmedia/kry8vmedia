@@ -1,0 +1,35 @@
+---
+no-footer-nav: true
+bodybg: error
+title: KABOOM! | Kry8v Media
+extra: padding
+permalink: /404
+description: We blew our minds looking for the page you requested. We just can't seem to find it.
+image: /img/404.png
+---
+
+<div class="container">
+
+  <div class="row">
+    <div class="solitary-column">
+      {% include cloudinary.html img="img/404" title="Kaboom! 404" alt="Kaboom! 404" class="img-responsive" size="50" vw="100" %}
+      <h1>OUCH!</h1>
+      <p>We blew our minds looking for the page you requested. We just can't seem to find it.</p>
+      <p>Perhaps we can interest you in one of these:</p>
+      <ul class="list-inline">
+        <li><a href="{{ site.baseurl }}/#header">Home</a></li>
+        {% assign navigation_pages = site.html_pages | sort: 'navigation_weight' %}
+        {% for p in navigation_pages %}
+          {% if p.navigation_weight %}
+            <li>
+              <a href="{{ p.url }}" {% if p.url == page.url %} class="active" {% endif %}>{{ p.title }}</a>
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+
+    </div>
+
+  </div><!-- /.row-->
+
+</div><!-- /.container -->

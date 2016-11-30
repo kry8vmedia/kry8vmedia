@@ -1,0 +1,153 @@
+#Build settings
+gems:
+  - jekyll-assets
+  - jekyll-cloudinary
+  - jekyll-seo-tag
+  - jekyll-coffeescript
+  - jekyll-feed
+  - jekyll-autoprefixer
+  - breakpoint
+
+include:
+  - _pages
+  - _img
+  - .htaccess
+
+exclude:
+  - node_modules
+  - README.md
+  - LICENSE.md
+  - Gemfile*
+  - uninstall all gems.txt
+  - Netlify CMS.md
+  - Rakefile*
+  - style.css
+
+markdown: kramdown
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: chanda
+      published: true
+      comments: true
+  -
+    scope:
+      path: ""
+      type: "drafts"
+    values:
+      layout: "post"
+      author: chanda
+
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+
+  -
+    scope:
+      path: ""
+    values:
+      image: https://res.cloudinary.com/krvmedia/img/blog-image.jpg
+  
+#Site settings
+title: Kry8v Media
+email: contact@krvmedia.com
+personal-email: c.mulenga@krvmedia.com
+description: > # this means to ignore newlines until "baseurl:"
+  We pursue creative arts that innovate, inspire and ignite infinite imagination.
+#baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://krvmedia.com"
+twitter:
+  username: kry8vmedia
+github_username: kry8vmedia
+twitter_username: kry8vmedia
+google_site_verification: vWavgrIUW8L9zzRbSS3PUZtQrlOeedCKSX2szz8QjOg
+logo: /img/kry8v-logo.png
+
+social:
+  name: Kry8v Media
+  links:
+    - https://twitter.com/kry8vmedia
+    - https://www.facebook.com/kry8v
+    - https://instagram.com/kry8vmedia
+    - https://soundcloud.com/kry8vmedia
+
+image:
+  twitter: /img/twitter-card.jpg
+  facebook: /img/facebook-ad.jpg
+  height: 100
+  width: 100
+
+excerpt_separator: <!--more-->
+permalink: /:year/:month/:slug
+timezone: Africa/Lusaka
+jekyll-mentions: https://twitter.com
+
+#Assets
+sass:
+  sass_dir: _sass
+  css_dir: css
+  style:  expanded
+  autoprefixer:
+      browsers: ["last 5 versions","> 10%","IE 9"]
+      
+assets:
+  compress:
+    css: false
+    js: false
+  cache: .asset-cache
+  cache_type: filesystem
+  prefix: "/assets"
+  digest: false
+  sources:
+    - "_assets/js"
+  features:
+    liquid: false
+    integrity: false
+    automatic_img_size: true 
+    automatic_img_alt : true 
+
+#Jekyll Archives settings
+jekyll-archives:
+  enabled: all
+  layouts:
+    day: year-archive
+    year: year-archive
+    month: month-archive
+    tag: tag-archive
+    category: category-archive
+  permalinks:
+    year: /archive/:year/
+    month: /archive/:year/:month/
+    category: /archive/categories/:name/
+    tag:  /archive/tags/:name/
+
+#Cloudinary
+cloudinary:
+  cloud_name: krvmedia
+  verbose: true
+  presets:
+    presets:
+    default:
+      min_width: 320
+      max_width: 1920
+      fallback_max_width: 800
+      steps: 6
+      sizes: '(min-width: 50rem) 50rem, 90vw'
+      figure: always
+    logo:
+      min_width: 80
+      max_width: 400
+      fallback_max_width: 200
+      steps: 3
+      sizes: '(min-width: 50rem) 13rem, (min-width: 40rem) 25vw, 45vw'
+      figure: never
+      attributes:
+        class: logo

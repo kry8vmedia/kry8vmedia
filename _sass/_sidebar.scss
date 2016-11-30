@@ -1,0 +1,39 @@
+.blog-sidebar {
+    padding: 0 30px;
+    h4 {
+        font-family: $Roboto;
+    }
+    @include breakpoint($way-big) {
+        font-size: 1.2em;
+    }
+}
+.sidebar-module {
+    padding: 15px;
+    margin: 0 -15px 15px;
+}
+#subscribe-box {
+    text-rendering: optimizeLegibility;
+    .form-group {
+        margin-top: 15px;
+    }
+    form p {
+        text-align: center;
+    }
+    @include breakpoint($way-big) {
+        #mce-EMAIL {
+            font-size: 0.9em;
+            height: 2em;
+        }
+    }
+}
+
+.sidebar-module-inset {
+    padding: 15px;
+    background-color: $lighter-color;
+    border-radius: 4px;
+    border: 3px dashed $primary-color;
+    p:last-child, ul:last-child, ol:last-child {
+        margin-bottom: 0;
+    }
+}
+

@@ -1,0 +1,54 @@
+<!-- Custom Animations & Media Queries-->
+{% javascript scripts %}
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<!-- Cloudinary -->
+<script type="text/javascript">
+   $.cloudinary.config({"api_key":"619824693495266","cloud_name":"krvmedia"});
+</script>
+<script type="text/javascript">$.cloudinary.responsive()</script>
+
+{% if page.title == "Store" %}
+<!-- Gumroad -->
+  <script src="https://gumroad.com/js/gumroad.js"></script>
+{% endif %}
+
+{% if page.title != "Store" %}
+  {% include analytics.html %}
+{% endif %}
+
+
+{% if page.layout == "post" %}
+<!-- Disqus Comment Counter-->
+  <script id="dsq-count-scr" src="//kry8v-media.disqus.com/count.js" async></script>
+{% endif %}
+
+<!-- Android Bug Workaround -->
+<script>
+$(function () {
+  var nua = navigator.userAgent
+  var isAndroid = (nua.indexOf('Mozilla/5.0') > -1 && nua.indexOf('Android ') > -1 && nua.indexOf('AppleWebKit') > -1 && nua.indexOf('Chrome') === -1)
+  if (isAndroid) {
+    $('select.form-control').removeClass('form-control').css('width', '100%')
+  }
+})
+</script>
+
+{% if page.blog || page.post %}
+  <!-- Viglink -->
+  <script type="text/javascript">
+    var vglnk = { key: 'a730210f02f035a287852b7f119fa4ae' };
+
+    (function(d, t) {
+      var s = d.createElement(t); s.type = 'text/javascript'; s.async = true;
+      s.src = '//cdn.viglink.com/api/vglnk.js';
+      var r = d.getElementsByTagName(t)[0]; r.parentNode.insertBefore(s, r);
+    }(document, 'script'));
+  </script>
+{% endif %}

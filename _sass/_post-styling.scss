@@ -1,0 +1,68 @@
+//#post-page  {
+    //.content { padding-top: 7.5em; }
+    //&.blog-sidebar {
+    //    padding-top: 200px;
+    //}
+.comments {
+        margin: 0 0 20px;
+        display: inline-block;
+    }
+#disqus_thread {
+    padding-top: 50px;
+}
+.related-rectangle {
+    border-top: 3px solid $dark-gray;
+    padding: 15px 0;
+    margin: 0 auto 20px;
+}
+
+#share-box {
+    margin-bottom: 20px;
+    .share-button {
+        margin: 0;
+        padding: 10px;
+        opacity: 0.8;
+        &:hover, &:focus {
+            opacity: 1;
+        }
+    }
+    a {
+        &.facebook-official {
+            color: $facebook-color;
+            &:hover, &:focus {
+                color: lighten($facebook-color, 20%);
+            }
+        }
+        &.google-official {
+            color: $google-color;
+            &:hover, &:focus {
+                color: lighten($google-color, 20%);
+            } 
+        }
+        &.linkedin-official {
+            color: $linkedin-color;
+            &:hover, &:focus {
+                color: lighten($linkedin-color, 20%);
+            }
+        }
+        &.envelop-official {
+            color: $envelope-color;
+            &:hover, &:focus {
+                color: lighten($envelope-color, 20%);
+            }
+        }
+        &.reddit-official {
+            color: $reddit-color;
+            &:hover, &:focus {
+                color: lighten($reddit-color, 20%);
+            }
+        }
+        &.twitter-official {
+            color: $twitter-color;
+            &:hover, &:focus {
+                color: lighten($twitter-color, 20%);
+            }
+        }
+    }
+}
+
