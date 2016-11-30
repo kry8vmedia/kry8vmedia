@@ -37,7 +37,7 @@ gulp.task('css', ['jekyll'], function() {
        .pipe(importCss())
        .pipe(autoprefixer())
        .pipe(uncss({
-           html: glob.sync("_site/*.html"),
+           html: glob.sync("_site/**/*.html"),
            ignore: [
                'label.active', 
                '.dark-mode', 
