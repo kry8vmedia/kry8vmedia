@@ -22,6 +22,8 @@ exclude:
   - Netlify CMS.md
   - Rakefile*
   - style.css
+  - package.json
+  - gulpfile.js
 
 markdown: kramdown
 
@@ -99,12 +101,12 @@ timezone: Africa/Lusaka
 jekyll-mentions: https://twitter.com
 
 #HTML compress
-compress_html:
-  clippings: all
-  comments: all
-  endings: []
-  profile: false
-  blanklines : true
+#compress_html:
+ # clippings: all
+  #comments: all
+  #endings: []
+ # profile: false
+ # blanklines : true
 
 #Assets
 sass:

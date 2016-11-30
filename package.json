@@ -1,0 +1,39 @@
+{
+  "name": "kry8vmedia",
+  "version": "1.0.0",
+  "description": "Kry8v Media website",
+  "main": "index.js",
+  "dependencies": {
+    "cloudinary-jquery": "^2.1.6",
+    "glob": "^7.1.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-import-css": "^0.1.3",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-minify-html": "^1.0.6",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-shell": "^0.5.2",
+    "gulp-uncss": "^1.0.6",
+    "request": "^2.79.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  },
+  "scripts": {
+    "test": "chad"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kry8vmedia/kry8vmedia.git"
+  },
+  "keywords": [
+    "kry8v",
+    "website"
+  ],
+  "author": "Chanda Mulenga",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kry8vmedia/kry8vmedia/issues"
+  },
+  "homepage": "https://github.com/kry8vmedia/kry8vmedia#readme"
+}
