@@ -6,27 +6,10 @@ body, html {
 }
 
 body {
-    font-family: $default-font;
-    background-color: $lighter-color;
-    h2, h3,
-    .h2, .h3 {
-        color: $primary-color;
-    }
-    a {
-        color: $primary-color;
-        &:hover, &:focus {
-            color: $secondary-color;
-        }
-    }
-
-    .img-radius {
-        border-radius: 40px;
-    }
-}
-
-.fonts-loaded body {
     font-family: $Raleway;
     font-weight: 400;
+    background-color: $lighter-color;
+
     h1, h2, h3,
     .h1, .h2, .h3 {
         font-family: $Josefin;
@@ -38,9 +21,26 @@ body {
         font-weight: $Josefin;
         font-weight: 400;
     }
+
+    h2, h3,
+    .h2, .h3 {
+        color: $primary-color;
+    }
+
     q, .q {
         font-family: $Josefin;
         font-weight: 400;
+    }
+
+    a {
+        color: $primary-color;
+        &:hover, &:focus {
+            color: $secondary-color;
+        }
+    }
+
+    .img-radius {
+        border-radius: 40px;
     }
 }
 
