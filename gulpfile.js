@@ -1,3 +1,4 @@
+//JEKYLL
 var gulp = require('gulp'),
     shell = require('gulp-shell');
 
@@ -8,6 +9,19 @@ gulp.task('jekyll', function() {
   ]));
 });
 
+//HTML
+var gulp = require('gulp'),
+    minifyHTML = require('gulp-minify-html');
+
+gulp.task('html', ['jekyll'], function() {
+    return gulp.src('_site/**/*.html')
+        .pipe(minifyHTML({
+            quotes: true
+        }))
+        .pipe(gulp.dest('_site/'));
+});
+
+//CSS
 var gulp = require('gulp'),
     sass = require('gulp-sass'),
     importCss = require('gulp-import-css'),
@@ -44,7 +58,7 @@ gulp.task('css', ['jekyll'], function() {
        .pipe(gulp.dest('_site/css/'));
 });
 
-gulp.task('build', ['css']);
+gulp.task('build', ['css', 'html']);
 
 var gulp = require('gulp'),
     request = require('request');
