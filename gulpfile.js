@@ -23,14 +23,27 @@ gulp.task('css', ['jekyll'], function() {
        .pipe(importCss())
        .pipe(autoprefixer())
        .pipe(uncss({
-           html: glob.sync("_site/**/*.html"),
+           html: glob.sync("_site/*.html"),
            ignore: [
                'label.active', 
                '.dark-mode', 
                'span.tweet-time',
                /(#|\.)(is-)/,
                /(#|\.)(has-)/,
-               /(#|\.)(js-)/           
+               /(#|\.)(js-)/,
+               /\.opaque/, 
+               /\.affix/,
+                /\.alert/,
+                /\.close/,
+                /\.collapse/,
+                /\.fade/,
+                /\.has/,
+                /\.help/,
+                /\.in/,
+                /\.modal/,
+                /\.open/,
+                /\.popover/,
+                /\.tooltip/          
           ]
        }))
        .pipe(minifyCss({keepBreaks:false}))
