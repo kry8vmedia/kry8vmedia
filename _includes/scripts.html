@@ -1,5 +1,13 @@
-<!-- Custom Animations & Media Queries-->
-{% javascript scripts %}
+<!-- Font Awesome --> 
+<script src="https://use.fontawesome.com/924d12c216.js"></script>
+
+{% if page.title != "Store" %}
+  {% javascript scripts-analysis %}
+{% else %}
+  {% javascript scripts %}
+{% endif %}
+
+
 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -8,19 +16,17 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
 
-<!-- Cloudinary -->
+
+
+<!-- Cloudinary 
 <script type="text/javascript">
    $.cloudinary.config({"api_key":"619824693495266","cloud_name":"krvmedia"});
 </script>
-<script type="text/javascript">$.cloudinary.responsive()</script>
+<script type="text/javascript">$.cloudinary.responsive()</script> -->
 
 {% if page.title == "Store" %}
 <!-- Gumroad -->
   <script src="https://gumroad.com/js/gumroad.js"></script>
-{% endif %}
-
-{% if page.title != "Store" %}
-  {% include analytics.html %}
 {% endif %}
 
 
@@ -29,7 +35,7 @@
   <script id="dsq-count-scr" src="//kry8v-media.disqus.com/count.js" async></script>
 {% endif %}
 
-<!-- Android Bug Workaround -->
+<!-- Android Bug Workaround 
 <script>
 $(function () {
   var nua = navigator.userAgent
@@ -38,11 +44,12 @@ $(function () {
     $('select.form-control').removeClass('form-control').css('width', '100%')
   }
 })
-</script>
+</script> -->
 
+<!-- Hide until blog has content 
 {% if page.blog || page.post %}
   <!-- Viglink -->
-  <script type="text/javascript">
+  <!-- <script type="text/javascript">
     var vglnk = { key: 'a730210f02f035a287852b7f119fa4ae' };
 
     (function(d, t) {
@@ -51,4 +58,4 @@ $(function () {
       var r = d.getElementsByTagName(t)[0]; r.parentNode.insertBefore(s, r);
     }(document, 'script'));
   </script>
-{% endif %}
+{% endif %} -->

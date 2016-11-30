@@ -2,6 +2,15 @@
 # Jekyll tasks
 ##############
 
+task :clean => ["clean:dev"]
+namespace :clean do
+  desc "Cleaning up the junk"
+  task :dev do
+    puts "Cleaning up the junk files..."
+    system "bundle exec jekyll clean"
+  end
+end
+
 # Usage: rake serve, rake serve:prod
 task :serve => ["serve:dev"]
 namespace :serve do

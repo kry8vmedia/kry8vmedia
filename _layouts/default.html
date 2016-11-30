@@ -1,3 +1,6 @@
+---
+layout: compress
+---
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,7 +9,7 @@
   <!-- Hide Address Bar -->
   <!-- setTimeout(function() { window.scrollTo(0, 1) }, 100); -->
   <body{% if page.page-id %} id="{{ page.page-id }}"{% endif %}{% if page.bodybg %} class="{{ page.bodybg }}"{% endif %} >
-    <script>
+    <!--<script>
       window.fbAsyncInit = function() {
         FB.init({
           appId      : '297457363988290',
@@ -23,7 +26,7 @@
         js.src = "//connect.facebook.net/en_US/sdk.js";
         fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));
-    </script>
+    </script>-->
     <div id="destination-top"></div>
 
     {% unless page.no-footer-nav %}

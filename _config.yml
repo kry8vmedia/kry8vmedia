@@ -24,6 +24,7 @@ exclude:
   - style.css
   - package.json
   - gulpfile.js
+  - font-awesome.scss
 
 markdown: kramdown
 
@@ -91,7 +92,7 @@ image:
 
 facebook:
   app_id: 297457363988290
-  publisher: https://www.facebook.com/kry8v
+  #publisher: https://www.facebook.com/kry8v
   admins: https://www.facebook.com/stconeten 
 
 
@@ -101,12 +102,12 @@ timezone: Africa/Lusaka
 jekyll-mentions: https://twitter.com
 
 #HTML compress
-#compress_html:
- # clippings: all
-  #comments: all
-  #endings: []
- # profile: false
- # blanklines : true
+compress_html:
+  clippings: all
+  comments: all
+  endings: []
+  profile: false
+  blanklines : true
 
 #Assets
 sass:
