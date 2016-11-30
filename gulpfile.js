@@ -9,17 +9,6 @@ gulp.task('jekyll', function() {
 });
 
 var gulp = require('gulp'),
-    minifyHTML = require('gulp-minify-html');
-
-gulp.task('html', ['jekyll'], function() {
-    return gulp.src('_site/**/*.html')
-        .pipe(minifyHTML({
-            quotes: true
-        }))
-        .pipe(gulp.dest('_site/'));
-});
-
-var gulp = require('gulp'),
     sass = require('gulp-sass'),
     importCss = require('gulp-import-css'),
     autoprefixer = require('gulp-autoprefixer'),
@@ -45,11 +34,11 @@ gulp.task('css', ['jekyll'], function() {
           ]
        }))
        .pipe(minifyCss({keepBreaks:false}))
-       .pipe(rename('style.min.css'))
+       .pipe(rename('style.css'))
        .pipe(gulp.dest('_site/css/'));
 });
 
-gulp.task('build', ['css', 'html']);
+gulp.task('build', ['css']);
 
 var gulp = require('gulp'),
     request = require('request');
