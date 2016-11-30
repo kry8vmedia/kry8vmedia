@@ -70,6 +70,7 @@ github_username: kry8vmedia
 twitter_username: kry8vmedia
 google_site_verification: vWavgrIUW8L9zzRbSS3PUZtQrlOeedCKSX2szz8QjOg
 logo: /logos/kry8v-logo-black.png
+type: website
 
 social:
   name: Kry8v Media
@@ -84,6 +85,12 @@ image:
   facebook: /img/facebook-ad.jpg
   height: 100
   width: 100
+
+facebook:
+  app_id: 297457363988290
+  publisher: https://www.facebook.com/kry8v
+  admins: https://www.facebook.com/stconeten 
+
 
 excerpt_separator: <!--more-->
 permalink: /:year/:month/:slug
