@@ -34,16 +34,9 @@ gulp.task('css', ['jekyll'], function() {
                /\.opaque/, 
                /\.affix/,
                 /\.alert/,
-                /\.close/,
                 /\.collapse/,
                 /\.fade/,
-                /\.has/,
-                /\.help/,
-                /\.in/,
                 /\.modal/,
-                /\.open/,
-                /\.popover/,
-                /\.tooltip/          
           ]
        }))
        .pipe(minifyCss({keepBreaks:false}))

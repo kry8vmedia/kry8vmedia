@@ -1,5 +1,5 @@
-<!-- Font Awesome  -->
-<script src="https://use.fontawesome.com/924d12c216.js"></script> 
+<!-- Font Awesome  
+<script src="https://use.fontawesome.com/924d12c216.js"></script> -->
   {% javascript scripts %}
 
 <!-- Cloudinary --> 
@@ -52,6 +52,36 @@ $(function () {
     fjs.parentNode.insertBefore(js, fjs);
   }(document, 'script', 'facebook-jssdk'));
 </script>
+
+    {% javascript fontface observer %}
+    <script>
+      (function( w ){
+          // if the class is already set, we're good.
+          if( w.document.documentElement.className.indexOf( "fonts-loaded" ) > -1 ){
+              return;
+          }
+          var fontA = new w.FontFaceObserver( "Josefin Slab", {
+              weight: 400
+          });
+          var fontB = new w.FontFaceObserver( "Josefin Slab", {
+              weight: 700
+          });
+          var fontC = new w.FontFaceObserver( "Roboto Condensed", {
+              weight: 300
+          });
+          var fontD = new w.FontFaceObserver( "Raleway", {
+              weight: 400
+          });
+          var fontE = new w.FontFaceObserver( "Raleway", {
+              weight: 700
+          });
+          w.Promise
+              .all([fontA.check(), fontB.check(), fontC.check(), fontD.check(), fontE.check()])
+              .then(function(){
+                  w.document.documentElement.className += " fonts-loaded";
+              });
+      }( this ));
+    </script>
 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->

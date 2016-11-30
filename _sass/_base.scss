@@ -1,35 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Slab:400,700|Raleway:400,700|Roboto+Condensed:300');
+
 body, html {
     width: 100%;
     height: 100%;
 }
 
 body {
-    font-family: $Raleway;
-    font-weight: 400;
+    font-family: $default-font;
     background-color: $lighter-color;
-
-    h1, h2, h3,
-    .h1, .h2, .h3 {
-        font-family: $Josefin;
-        font-weight: 700
-    }
-
-    h4, h5, h6,
-    .h4, .h5, .h6 {
-        font-weight: $Josefin;
-        font-weight: 400;
-    }
-
     h2, h3,
     .h2, .h3 {
         color: $primary-color;
     }
-
-    q, .q {
-        font-family: $Josefin;
-        font-weight: 400;
-    }
-
     a {
         color: $primary-color;
         &:hover, &:focus {
@@ -40,5 +22,26 @@ body {
     .img-radius {
         border-radius: 40px;
     }
-}
 
+    .fonts-loaded & {
+        font-family: $Raleway;
+        font-weight: 400;
+        h1, h2, h3,
+        .h1, .h2, .h3 {
+            font-family: $Josefin;
+            font-weight: 700
+        }
+        h4, h5, h6,
+        .h4, .h5, .h6 {
+            font-weight: $Josefin;
+            font-weight: 400;
+        }
+        q, .q {
+            font-family: $Josefin;
+            font-weight: 400;
+        }
+        .btn {
+            font-family: $Roboto;
+        }
+    }
+}

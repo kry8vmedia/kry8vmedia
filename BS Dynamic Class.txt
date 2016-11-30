@@ -1,0 +1,14 @@
+bootstrap dynamic classes fof Gulp:
+/\.opaque/, 
+/\.affix/,
+/\.alert/,
+/\.close/,
+/\.collapse/,
+/\.fade/,
+/\.has/,
+/\.help/,
+/\.in/,
+/\.modal/,
+/\.open/,
+/\.popover/,
+/\.tooltip/ 
