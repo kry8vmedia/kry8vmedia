@@ -9,6 +9,7 @@ post:
 page-id: post-page
 published:
 description:
+type: article
 ---
 
 <!--more-->

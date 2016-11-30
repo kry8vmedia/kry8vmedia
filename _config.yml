@@ -66,6 +66,7 @@ description: > # this means to ignore newlines until "baseurl:"
 url: "https://www.krvmedia.com"
 twitter:
   username: kry8vmedia
+  card: /img/twitter-card.jpg 
 github_username: kry8vmedia
 twitter_username: kry8vmedia
 google_site_verification: vWavgrIUW8L9zzRbSS3PUZtQrlOeedCKSX2szz8QjOg
