@@ -4,7 +4,7 @@ var gulp = require('gulp'),
 gulp.task('jekyll', function() {
   return gulp.src('_pages/index.html', { read: false })
     .pipe(shell([
-      'JEKYLL_ENV=production bundle exec jekyll build'
+      'bundle exec jekyll build'
   ]));
 });
 
