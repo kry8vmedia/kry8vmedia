@@ -132,6 +132,10 @@ body {
     }
 }
 
+ul.sitemap {
+    line-height: 2;
+}
+
 @include breakpoint($way-big) {
     .tag-line {
         position: relative;

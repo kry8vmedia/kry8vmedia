@@ -2,7 +2,7 @@
 layout: jumbo
 no-footer: true
 permalink: /sitemap
-headline: Sitemap
+headline: <i class="fa fa-sitemap"></i> Sitemap
 description: Never get lost on our site! Find your way below
 title: Sitemap
 page-id: jumbo-page
@@ -17,9 +17,8 @@ pageClass: site-page
 
                 <h2 style="text-align: left;">Pages</h2>
                 <hr class="section-heading-spacer">
-                    <br>
-                    <br>
-                    <ul style="list-style-type: square;">
+                <div class="clearfix"></div>
+                    <ul class="sitemap" style="list-style-type: square;">
                         {% assign visible_pages = site.html_pages | sort: 'visible_weight' %}
                         {% for p in visible_pages %}
                             {% if p.visible_weight %}
@@ -41,10 +40,9 @@ pageClass: site-page
 
                 <h2 style="text-align: left;">Blog Posts</h2>
                 <hr class="section-heading-spacer">
-                <br>
-                <br>
+                <div class="clearfix"></div>
                 {% for post in site.posts %}
-                    <ul style="list-style-type: square;">
+                    <ul class="sitemap" style="list-style-type: square;">
                         <li><a href="{{ site.url }}/{{ post.url }}">{{ post.title }}</a></li>
                     </ul>
                 {% endfor %}

@@ -4,7 +4,8 @@
 }
 
 .half-width-column {
-    @include make-sm-column(6);
+    @include make-sm-column(5);
+    @include make-sm-column-offset(1);
 }
 
 .third-width-column {
