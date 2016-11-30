@@ -58,7 +58,7 @@ gulp.task('css', ['jekyll'], function() {
        .pipe(gulp.dest('_site/css/'));
 });
 
-gulp.task('build', ['css', 'html']);
+gulp.task('build', ['css']);
 
 var gulp = require('gulp'),
     request = require('request');
