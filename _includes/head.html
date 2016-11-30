@@ -17,16 +17,11 @@
 
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
 
-  <style type="text/css">
-    {% capture criticalcss %}
-      {% include critical.scss %}
-    {% endcapture %}
-    {{ criticalcss | scssify }}
-  </style>
   <link rel="preload" href="{{ site.url }}/css/style.css" as="style" onload="this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="{{ site.url }}/css/style.css"></noscript>
   {% include core-scripts.html %}
   <!-- Custom Fonts --> 
   <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:400,700|Roboto+Condensed:300|Raleway:400,700" rel="stylesheet" />
+  <script async type="text/javascript">$.cloudinary.responsive()</script>
 </head>
 
