@@ -51,6 +51,7 @@ gulp.task('css', ['jekyll'], function() {
                 /\.collapse/,
                 /\.fade/,
                 /\.modal/,
+                /\.typed-cursor/,
           ]
        }))
        .pipe(minifyCss({keepBreaks:false}))
