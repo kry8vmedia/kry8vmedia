@@ -1,14 +1,14 @@
 <!-- Font Awesome  
-<script async src="https://use.fontawesome.com/924d12c216.js"></script> -->
+<script src="https://use.fontawesome.com/924d12c216.js"></script> -->
   {% javascript scripts %}
 
 <!-- Cloudinary --> 
-<script async type="text/javascript">
+<script type="text/javascript">
    $.cloudinary.config({"api_key":"619824693495266","cloud_name":"krvmedia"});
 </script>
 
 <!-- Android Bug Workaround -->
-<script async>
+<script>
 $(function () {
   var nua = navigator.userAgent
   var isAndroid = (nua.indexOf('Mozilla/5.0') > -1 && nua.indexOf('Android ') > -1 && nua.indexOf('AppleWebKit') > -1 && nua.indexOf('Chrome') === -1)
@@ -20,20 +20,20 @@ $(function () {
 
 {% if page.title == "Store" %}
 <!-- Gumroad -->
-  <script async src="https://gumroad.com/js/gumroad.js"></script>
+  <script src="https://gumroad.com/js/gumroad.js"></script>
 {% endif %}
 
 
 {% if page.layout == "post" %}
 <!-- Disqus Comment Counter-->
-  <script async id="dsq-count-scr" src="//kry8v-media.disqus.com/count.js" async></script>
+  <script id="dsq-count-scr" src="//kry8v-media.disqus.com/count.js"></script>
 {% endif %}
 
 {% if page.title != "Store" %}
   {% include analytics.html %}
 {% endif %}
 
-<script async>
+<script>
   window.fbAsyncInit = function() {
     FB.init({
       appId      : '297457363988290',
