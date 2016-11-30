@@ -17,6 +17,12 @@ namespace :serve do
     puts "Starting up production Jekyll site server..."
     system "bundle exec jekyll serve --no-watch"
   end
+
+  desc "Serve production Jekyll site locally with watch and increment"
+  task :watch do
+    puts "Starting up production Jekyll site server..."
+    system "bundle exec jekyll serve --watch --incremental"
+  end
 end
 
 # Usage: rake build, rake build:dev, rake build:drafts

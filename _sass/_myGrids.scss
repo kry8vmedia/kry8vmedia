@@ -37,10 +37,12 @@ div.license-column {
 
 .left-column {
     @include make-lg-column(5);
+    margin: 20px 0;
 }
 .right-column {
     @include make-lg-column(5);
     @include make-lg-column-offset(2);
+    margin: 20px 0;
 }
 
 //Home page
@@ -79,6 +81,7 @@ div.license-column {
 //Blog page
 .article {
     @include make-sm-column(8);
+    margin-bottom: 50px;
 }
 
 .sidebar-column {

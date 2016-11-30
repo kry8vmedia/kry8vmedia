@@ -54,7 +54,7 @@ defaults:
     scope:
       path: ""
     values:
-      image: https://res.cloudinary.com/krvmedia/img/blog-image.jpg
+      image: https://krvmedia.com/img/blog-image.jpg
   
 #Site settings
 title: Kry8v Media
@@ -63,13 +63,13 @@ personal-email: c.mulenga@krvmedia.com
 description: > # this means to ignore newlines until "baseurl:"
   We pursue creative arts that innovate, inspire and ignite infinite imagination.
 #baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://krvmedia.com"
+url: "https://www.krvmedia.com"
 twitter:
   username: kry8vmedia
 github_username: kry8vmedia
 twitter_username: kry8vmedia
 google_site_verification: vWavgrIUW8L9zzRbSS3PUZtQrlOeedCKSX2szz8QjOg
-logo: /img/kry8v-logo.png
+logo: /logos/kry8v-logo-black.png
 
 social:
   name: Kry8v Media
@@ -91,14 +91,12 @@ timezone: Africa/Lusaka
 jekyll-mentions: https://twitter.com
 
 #HTML compress
-jekyll-press:
-  exclude: 
-    - 'atom.xml'
-    - '*.js'
-    - '*.css' 
-  js_options: {}
-  css_options: {}
-  html_options: {}
+compress_html:
+  clippings: all
+  comments: all
+  endings: []
+  profile: false
+  blanklines : true
 
 #Assets
 sass:

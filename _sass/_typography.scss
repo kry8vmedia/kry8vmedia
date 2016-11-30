@@ -1,6 +1,6 @@
 body {
-    font-size: 1.6em;
-    line-height: 1.6;
+    font-size: 1.5em;
+    line-height: 1.5;
      @include breakpoint($jerry) {
         font-size: 1.3em;
         line-height: 1.5;
@@ -34,14 +34,17 @@ body {
             font-size: 1.5em;
         }
         @include breakpoint($ben) {
-            font-size: 2em;
+            font-size: 1.8em;
+        }
+         @include breakpoint($gwen) {
+            font-size: 1.8em;
         }
         @include breakpoint($four-arms) {
             font-size: 2em;
         }
     }
     q, .q {
-        font-size: 1.5em;
+        font-size: 1.3em;
         @include breakpoint($jerry) {
             font-size: 1.1em;
         }
@@ -98,6 +101,26 @@ body {
     p {
         padding-top: 30px;
         font-weight: 400;
+        @include breakpoint($way-big) {
+            &.tagline {
+                position: absolute;
+                top: 400px;
+                left: 0;
+                right: 0;
+                margin: 50px auto;
+                font-size: 1.5em;
+            }
+        }
+        @include breakpoint($ridiculous) {
+            &.tagline {
+                position: absolute;
+                top: 400px;
+                left: 0;
+                right: 0;
+                margin: 50px auto;
+                font-size: 1.5em;
+            }
+        }
     }
     footer {
         @include breakpoint($way-big) {

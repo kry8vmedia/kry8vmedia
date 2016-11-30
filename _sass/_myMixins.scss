@@ -19,6 +19,9 @@
     @include breakpoint ($ben){
         background:  linear-gradient(rgba(0, 0, 0, $start-alpha), rgba(0, 0, 0, $end-alpha)), url('https://res.cloudinary.com/krvmedia/w_1024,q_auto,f_auto,dpr_auto,c_fill/#{$image-path}');
     }
+    @include breakpoint ($gwen){
+        background:  linear-gradient(rgba(0, 0, 0, $start-alpha), rgba(0, 0, 0, $end-alpha)), url('https://res.cloudinary.com/krvmedia/w_1440,q_auto,f_auto,dpr_auto,c_fill/#{$image-path}');
+    }
     @include breakpoint ($four-arms){
         background:  linear-gradient(rgba(0, 0, 0, $start-alpha), rgba(0, 0, 0, $end-alpha)), url('https://res.cloudinary.com/krvmedia/w_1920,q_auto,f_auto,dpr_auto,c_fill/#{$image-path}');
     }

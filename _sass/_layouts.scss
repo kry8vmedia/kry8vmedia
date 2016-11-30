@@ -176,6 +176,9 @@
     @include breakpoint($ben) {
         background: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0.98),rgba(0,0,0,0.96), rgba(0,0,0,0.92), rgba(0,0,0,0.80), rgba(0,0,0,0.15)), url('https://res.cloudinary.com/krvmedia/w_1024,q_auto,f_auto,dpr_auto,c_fill/img/bg_1');
     }
+    @include breakpoint($gwen) {
+        background: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0.98),rgba(0,0,0,0.96), rgba(0,0,0,0.92), rgba(0,0,0,0.80), rgba(0,0,0,0.15)), url('https://res.cloudinary.com/krvmedia/w_1440,q_auto,f_auto,dpr_auto,c_fill/img/bg_1');
+    }
     @include breakpoint($four-arms) {
         background: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0.98),rgba(0,0,0,0.96), rgba(0,0,0,0.92), rgba(0,0,0,0.80), rgba(0,0,0,0.15)), url('https://res.cloudinary.com/krvmedia/w_1920,q_auto,f_auto,dpr_auto,c_fill/img/bg_1');
     }
@@ -357,6 +360,9 @@ footer {
     @include breakpoint($ben) {
             height: 300px;
         }
+        @include breakpoint($four-arms) {
+            height: 350px;
+        }
     @include breakpoint($four-arms) {
             height: 370px;
         }
@@ -367,14 +373,23 @@ footer {
     h1 {
         position: absolute;
         color: $primary-color;
-        font-size: 3.3em;
+        font-size: 30px;
+        @include breakpoint ($grey-matter) {
+            font-size: 25px;
+        }
+        @include breakpoint ($tom) {
+            font-size: 46px;
+        }
+        @include breakpoint ($spike) {
+            font-size: 46px;
+        }
         bottom: 0;
         margin: 0;
         padding-top: 30px;
         text-align: center;
         width: 100%;
         @include text-shadow(0.6);
-        @include bg-overlay(0.4, 0.6);
+        @include bg-overlay(0.4, 0.4);
     }
 }
 
@@ -413,3 +428,8 @@ footer {
     padding: 25px 0;
 }
 
+.viglink {
+    position: absolute;
+    bottom: 10px;
+    right: 5px;
+}

@@ -1,5 +1,5 @@
 ---
-layout: null
+layout: compress
 home: true
 permalink: /
 visible_weight: 1
@@ -12,7 +12,7 @@ page-id: home-page
 
 {% include head.html %}
 
-  <body id="{{ page.page-id }}" data-spy="scroll" data-target="#main-nav" data-offset="50">
+  <body id="{{ page.page-id }}" data-spy="scroll" data-target="#home-nav" data-offset="50">
 
     <!-- Header -->
     <div id="header" class="intro-header">
@@ -48,8 +48,8 @@ page-id: home-page
     <!-- /.Header -->
 
     {% include navbar.html %}
-
-    <div class="container arrow-link">
+    
+    <div id="go-down" class="container arrow-link">
       <a class="arrow-link" href="#who">
           <div id="arrow" class="visible-lg-block" >
               <i class="arrow bounce fa fa-chevron-circle-down fa-3x"></i>
@@ -59,6 +59,11 @@ page-id: home-page
           </div>
       </a>
     </div>
+    <script>
+        $(function() {
+            $('.arrow-link').smoothScroll(1000);
+        });
+    </script>
 
     <!-- Page Content -->
 

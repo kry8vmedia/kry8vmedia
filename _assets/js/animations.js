@@ -9,7 +9,7 @@ $(window).scroll(function() {
 });
 
 //Go Up Arrow
-/*var offset = 600;
+var offset = 600;
 var duration = 300;
 $(window).scroll(function() {
     if($(this).scrollTop() > offset) {
@@ -19,7 +19,7 @@ $(window).scroll(function() {
     }
 });
 
-$('#go-up').click(function(event) {
+/*$('#go-up').click(function(event) {
   event.preventDefault();
   $('html, body').animate({scrollTop: 0}, duration);
   return false;
@@ -28,19 +28,13 @@ $('#go-up').click(function(event) {
 
 //SMOOTH SCROLL
 $(function() {
-    $('#scrolled-one').smoothScroll(1000);
-   });
- $(function() {
-    $('#scrolled-two').smoothScroll(1000);
-   });
-$(function() {
     $('#go-up').smoothScroll(1000);
    });
 $(function() {
-    $('#main-nav').smoothScroll(1000);
+    $('#home-nav').smoothScroll(1000);
    });
-$(function() {
-    $('#arrow').smoothScroll(1000);
+   $(function() {
+    $('#page-nav').smoothScroll(1000);
    });
 $(function() {
     $('#foot').smoothScroll(1000);
