@@ -15,7 +15,7 @@ type: website
 {% include head.html %}
 
   <body id="{{ page.page-id }}" data-spy="scroll" data-target="#home-nav" data-offset="50">
-
+    
     <!-- Header -->
     <div id="header" class="intro-header">
         <div class="container">
@@ -37,9 +37,15 @@ type: website
                       </div>
                       <span id="typed"></span>
                       </h4>
-                      <!--<ul class="list-inline intro-social-buttons">
-                      <p><span style="color: #ffaa00;"> ^300 Ig^500nite Infinite Imagination.</span></p>
-                      </ul>-->
+                      <script>
+                          $(function(){
+                            $("#typed").typed({
+                                stringsElement: $('#typed-strings'),
+                                typeSpeed: 20,
+                                startDelay: 2000,
+                            });
+                        });
+                      </script>
                   </div>
               </div>
           </div>
