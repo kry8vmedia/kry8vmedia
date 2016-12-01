@@ -64,7 +64,8 @@ $(function () {
   }(document, 'script', 'facebook-jssdk'));
 </script>
 
-  {% javascript fontfaceobserver %}
+<!-- Fonts -->
+  <script async type="text/javascript" src="{% asset_path fontfaceobserver.js %}"></script>
   <script>
     var j4 = new FontFaceObserver('Josefin Slab', {weight: 400});
     var j7 = new FontFaceObserver('Josefin Slab', {weight: 700});

@@ -38,7 +38,7 @@ type: website
                       <span id="typed"></span>
                       </h4>
                       <script>
-                          {% capture type %}{% javascript typing-animation %}{% endcapture %}
+                          {% capture type %}{% include typing-animation.js %}{% endcapture %}
                           {{ type | uglify | strip }}
                       </script>
                   </div>
