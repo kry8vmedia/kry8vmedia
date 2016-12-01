@@ -30,21 +30,16 @@ type: website
                       <hr class="intro-divider" />
                       <h4>We
                       <div id="typed-strings">
-                      <p><span style="color: #ffaa00;"> Love</span> Music and Graphics</p>
-                      <p><span style="color: #ffaa00;"> Love</span> Web Design and Development</p>
-                      <p><span style="color: #ffaa00;"> Love</span> Blogging</p>
-                      <p><span style="color: #ffaa00;"> Ignite Infinite Imagination.</span></p>
+                      <p><span class="colored-text"> Love</span> Music and Graphics</p>
+                      <p><span class="colored-text"> Love</span> Web Design and Development</p>
+                      <p><span class="colored-text"> Love</span> Blogging</p>
+                      <p><span class="colored-text"> Ignite Infinite Imagination.</span></p>
                       </div>
                       <span id="typed"></span>
                       </h4>
                       <script>
-                          $(function(){
-                            $("#typed").typed({
-                                stringsElement: $('#typed-strings'),
-                                typeSpeed: 20,
-                                startDelay: 2000,
-                            });
-                        });
+                          {% capture type %}{% javascript typing-animation %}{% endcapture %}
+                          {{ type | uglify | strip }}
                       </script>
                   </div>
               </div>

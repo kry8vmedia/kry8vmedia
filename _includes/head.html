@@ -6,18 +6,23 @@
   {% seo %}
   {% capture loadCSS %}{% include loadCSS.js %}{% endcapture %}
   {% capture loadCSSPolyfill %}{% include cssrelpreload.js %}{% endcapture %}
-  {% if page.home %}
-  {% capture criticalcss %}{% include homecritical.scss %}{% endcapture %}
+  {% capture critical %}{% include critical.scss %}{% endcapture %}
   <style>
-    {{ criticalcss | scssify }}
+    {{ critical | scssify }}
+    {% if page.home %}
+      {% capture homecriticalcss %}
+        {% include homecritical.scss %}
+      {% endcapture %}
+      {{ homecriticalcss | scssify }}
+    {% endif %}
   </style>
-  {% endif %}
   <link rel="preload" href="{{ site.url }}/css/style.css" as="style" onload="this.rel='stylesheet'"> 
   <noscript><link rel="stylesheet" href="{{ site.url }}/css/style.css"></noscript>
   <script>
     {{ loadCSS | uglify | strip }}
     {{ loadCSSPolyfill | uglify | strip }}
   </script>
+
   <link rel="shortcut icon" href="{{ site.url }}/img/icons/favicon.ico" type="image/x-icon" />
   <link rel="apple-touch-icon" href="{{ site.url }}/img/icons/apple-touch-icon.png" />
   <link rel="apple-touch-icon" sizes="57x57" href="{{ site.url }}/img/icons/apple-touch-icon-57x57.png" />
@@ -32,8 +37,8 @@
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
 
   {% include core-scripts.html %}
-  <!-- Font Awesome-->  
-  <script async src="https://use.fontawesome.com/924d12c216.js"></script> 
+  <!-- Font Awesome  
+  <script async src="https://use.fontawesome.com/924d12c216.js"></script> -->
   <!-- Custom Fonts 
   <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:400,700|Roboto+Condensed:300|Raleway:400,700" rel="stylesheet" /> --> 
   </head>

@@ -41,7 +41,7 @@ $(function() {
    });
 
   
-/*DROPDOWN ANIMATIONS*/
+/*DROPDOWN ANIMATIONS
 // ADD SLIDEDOWN ANIMATION TO DROPDOWN //
 $('.dropdown').on('show.bs.dropdown', function(e){
   $(this).find('.dropdown-menu').first().stop(true, true).slideDown();
@@ -50,7 +50,7 @@ $('.dropdown').on('show.bs.dropdown', function(e){
 // ADD SLIDEUP ANIMATION TO DROPDOWN //
 $('.dropdown').on('hide.bs.dropdown', function(e){
   $(this).find('.dropdown-menu').first().stop(true, true).slideUp();
-});
+});*/
 
 /*//Wait for Image to Load
 $(function() {

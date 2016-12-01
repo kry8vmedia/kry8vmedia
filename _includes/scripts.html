@@ -1,4 +1,17 @@
-  {% javascript scripts %}
+<!-- <script type="text/javascript">
+
+(function() {
+    var s = document.createElement('script');
+    s.type = 'text/javascript';
+    s.async = true;
+    s.src = 'http://yourdomain.com/script.js';
+    var x = document.getElementsByTagName('script')[0];
+    x.parentNode.insertBefore(s, x);
+})();
+
+</script> -->
+  
+<script async type="text/javascript" src="{% asset_path scripts.js %}"></script>  
 
 <!-- Cloudinary --> 
 <script type="text/javascript">
@@ -19,13 +32,13 @@ $(function () {
 
 {% if page.title == "Store" %}
 <!-- Gumroad -->
-  <script src="https://gumroad.com/js/gumroad.js"></script>
+  <script async src="https://gumroad.com/js/gumroad.js"></script>
 {% endif %}
 
 
 {% if page.layout == "post" %}
 <!-- Disqus Comment Counter-->
-  <script id="dsq-count-scr" src="//kry8v-media.disqus.com/count.js"></script>
+  <script async id="dsq-count-scr" src="//kry8v-media.disqus.com/count.js"></script>
 {% endif %}
 
 {% if page.title != "Store" %}

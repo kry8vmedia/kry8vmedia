@@ -1,3 +1,4 @@
+@import "bs/bootstrap/mixins/grid";
 /*Grids*/
 .full-width-column {
     @include make-sm-column(12);

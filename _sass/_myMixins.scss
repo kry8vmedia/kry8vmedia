@@ -40,3 +40,8 @@
 @mixin bg-overlay($alpha: 0.6, $alpha2: 0.6) {
     background:  linear-gradient(rgba(0, 0, 0, $alpha), rgba(0, 0, 0, $alpha2));
 }
+
+//Buttons
+@mixin buttns{
+    text-transform: uppercase;
+}
