@@ -18,8 +18,8 @@ description: Read about what we are up to!
     {% for post in site.posts %}
       <li>
         <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-          <a  role="button" class=" btn btn-primary comments" href="{{ post.url | prepend: site.baseurl | append: "#disqus_thread" }}"></a>
+          <a class="post-link" href="{{ post.url | prepend: site.url }}">{{ post.title }}</a>
+          <a  role="button" class=" btn btn-primary comments" href="{{ post.url | prepend: site.url | append: "#disqus_thread" }}"></a>
         </h2>
         {% assign author = site.data.authors[post.author] %}
         <p class="read-time">
@@ -30,6 +30,6 @@ description: Read about what we are up to!
     {% endfor %}
   </ul>
 
-  <p class="rss-subscribe hidden">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  <p class="rss-subscribe hidden">subscribe <a href="{{ "/feed.xml" | prepend: site.url }}">via RSS</a></p>
 
 </div>

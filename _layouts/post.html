@@ -13,7 +13,7 @@ post: true
 <br />
 
 <p class="text-center text-capitalize post-spacing">
-  <a target="_blank" href="https://twitter.com/{{ site.data.authors[page.author].twitter }}"><img class="img-circle" style="width: 4.7em;" src="{{ author.picture }}" alt="{{ site.data.authors[page.author].name }}" title="{{ site.data.authors[page.author].name }}" /></a> {{ author.display_name }} posted this on <span class="post-meta">{{ page.date | date: "%a, %-d %B, %Y" }}</span> | {{ page.content | reading_time }} reading time | <a href="{{ page.url | prepend: site.baseurl | append: "#disqus_thread" }}"></a>
+  <a target="_blank" href="https://twitter.com/{{ site.data.authors[page.author].twitter }}"><img class="img-circle" style="width: 4.7em;" src="{{ author.picture }}" alt="{{ site.data.authors[page.author].name }}" title="{{ site.data.authors[page.author].name }}" /></a> {{ author.display_name }} posted this on <span class="post-meta">{{ page.date | date: "%a, %-d %B, %Y" }}</span> | {{ page.content | reading_time }} reading time | <a href="{{ page.url | prepend: site.url | append: "#disqus_thread" }}"></a>
 </p>
 
 {{ content }}
