@@ -38,7 +38,7 @@ gulp.task('jekyll', function() {
 gulp.task('jekyll-serve', function() {
   return gulp.src('_pages/index.html', { read: false })
     .pipe(shell([
-      'bundle exec jekyll build --incremental'
+      'bundle exec jekyll build --incremental --config _config.yml,_config.dev.yml --profile --drafts'
   ]));
 });
 

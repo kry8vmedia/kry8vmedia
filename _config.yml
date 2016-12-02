@@ -96,7 +96,6 @@ facebook:
   #publisher: https://www.facebook.com/kry8v
   admins: https://www.facebook.com/stconeten 
 
-
 excerpt_separator: <!--more-->
 permalink: /:year/:month/:slug
 timezone: Africa/Lusaka
