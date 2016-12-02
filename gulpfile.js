@@ -87,6 +87,13 @@ gulp.task('analytics', function() {
     .pipe(gulp.dest('assets/'));
 });
 
+//Facebook Analytics
+gulp.task('fb-analytics', function() {
+  return download('https://connect.facebook.net/en_US/sdk.js')
+    .pipe(gulp.dest('assets/'));
+});
+
+
 //Development Deploy
 // Setup Server
 gulp.task('server', () => {
@@ -104,7 +111,6 @@ gulp.task('watch', () => {
 
 gulp.task('local', function(callback) {
     runSequence(
-        //'analytics',
         'jekyll-serve',
         'css',
         'server',
@@ -117,6 +123,7 @@ gulp.task('local', function(callback) {
 gulp.task('produce', function(callback) {
     runSequence(
         'analytics',
+        'fb-analytics',
         'jekyll',
         'css',
         callback
