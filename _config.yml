@@ -115,7 +115,7 @@ sass:
   css_dir: css
   style:  compressed
   autoprefixer:
-      browsers: ["last 5 versions","> 10%","IE 9"]
+      browsers: ["last 5 versions","> 5%","ie > 6", "Edge"]
       
 assets:
   compress:

@@ -28,10 +28,9 @@
             @include breakpoint($way-big) {
                 width: 80rem;
             }
-
-            .colored-text {
-                color: $primary-color;
-            }
+        }
+        .colored-text {
+            color: $primary-color;
         }
 
  //       > h1 {
@@ -55,7 +54,7 @@
         }
 
         > h4 {
-            color: set-color(black);
+            color: white;
         }
     }
 }

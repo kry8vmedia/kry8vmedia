@@ -1,20 +1,6 @@
 ---
-layout: compress
+layout: blog
 ---
-<!doctype html>
-<html lang="en">
-
-  {% include head.html %}
-  <link href="{{ site.baseurl }}/css/blog.css" rel="stylesheet" />
-
-  <body>
-    {% include navbar.html %}
-    <div class="container spaced">
-
-      <div class="row">
-
-        <div class="blog-column blog-main">
-
           <h2>Archive of posts with category: '{{ page.title }}'</h2>
           <ul>
             {% for post in page.posts %}
@@ -24,12 +10,3 @@ layout: compress
               </li>
             {% endfor %}
           </ul>
-
-        </div>
-
-        {% include sidebar.html %}
-      </div>
-    </div>
-
-  </body>
-</html>

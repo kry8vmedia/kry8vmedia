@@ -1,2 +1,1 @@
 //= require animations
-//= require smoothscroll

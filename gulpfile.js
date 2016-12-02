@@ -1,27 +1,9 @@
-//JEKYLL
+//Jekyll requirements
 var gulp = require('gulp'),
     shell = require('gulp-shell');
-
-gulp.task('jekyll', function() {
-  return gulp.src('_pages/index.html', { read: false })
-    .pipe(shell([
-      'bundle exec jekyll build'
-  ]));
-});
-
-//HTML
-var gulp = require('gulp'),
-    minifyHTML = require('gulp-minify-html');
-
-gulp.task('html', ['jekyll'], function() {
-    return gulp.src('_site/**/*.html')
-        .pipe(minifyHTML({
-            quotes: true
-        }))
-        .pipe(gulp.dest('_site/'));
-});
-
-//CSS
+//Html requirements    
+var minifyHTML = require('gulp-minify-html');
+//Main CSS requirements
 var gulp = require('gulp'),
     sass = require('gulp-sass'),
     importCss = require('gulp-import-css'),
@@ -30,14 +12,51 @@ var gulp = require('gulp'),
     minifyCss = require('gulp-minify-css'),
     rename = require('gulp-rename'),
     glob = require('glob');
+//SEO
+var request = require('request');
+//Additional
+var gutil = require('gulp-util'),
+    plumber = require('gulp-plumber'),
+    //minifyCSS = require('gulp-clean-css'),
+    prefixer = require('gulp-autoprefixer'),
+    connect = require('gulp-connect');
+    cp = require('child_process');
+    replace = require('gulp-replace');
+var fs = require('fs');
+    download = require('gulp-download');
+    runSequence = require('run-sequence');
+    files = ['_site/**/*.html']
 
-gulp.task('css', ['jekyll'], function() {
-   return gulp.src('css/style.scss')
-       .pipe(sass())
-       .pipe(importCss())
-       .pipe(autoprefixer())
+//JEKYLL
+gulp.task('jekyll', function() {
+  return gulp.src('_pages/index.html', { read: false })
+    .pipe(shell([
+      'bundle exec jekyll build'
+  ]));
+});
+
+gulp.task('jekyll-serve', function() {
+  return gulp.src('_pages/index.html', { read: false })
+    .pipe(shell([
+      'bundle exec jekyll build --incremental'
+  ]));
+});
+
+//HTML
+gulp.task('html', function() {
+    return gulp.src('_site/index.html')
+        .pipe(minifyHTML({
+            quotes: true
+        }))
+        .pipe(gulp.dest('_site/'));
+});
+
+//CSS
+gulp.task('css', function() {
+   return gulp.src('_site/css/style.css')
+       .pipe(autoprefixer('last 5 versions','> 5%','ie > 6', 'Edge'))
        .pipe(uncss({
-           html: glob.sync("_site/**/*.html"),
+           html: ['_site/*.html', '_site/**/**/*.html', '_site/**/**/**/*.html', '_site/archive/**/*.html', '_site/archive/**/**/*.html', '_site/archive/categories/**/*.html', '_site/archive/categories/tags/*.html'],
            ignore: [
                'label.active', 
                '.dark-mode', 
@@ -55,16 +74,53 @@ gulp.task('css', ['jekyll'], function() {
           ]
        }))
        .pipe(minifyCss({keepBreaks:false}))
-       .pipe(rename('style.css'))
+       .pipe(rename('un.style.css'))
        .pipe(gulp.dest('_site/css/'));
 });
 
-gulp.task('build', ['css']);
+//Google Analytics
+gulp.task('analytics', function() {
+  return download('https://www.google-analytics.com/analytics.js')
+    .pipe(gulp.dest('assets/'));
+});
 
-var gulp = require('gulp'),
-    request = require('request');
+//Development Deploy
+// Setup Server
+gulp.task('server', () => {
+  connect.server({
+    root: ['_site'],
+    port: 4000
+  });
+})
 
-gulp.task('seo', ['build'], function(cb) {
+// Watch files
+gulp.task('watch', () => {  
+  gulp.watch('css');
+  gulp.watch('jekyll-serve');
+});
+
+gulp.task('local', function(callback) {
+    runSequence(
+        //'analytics',
+        'jekyll-serve',
+        'css',
+        'server',
+        'watch',
+        callback
+    );
+});
+
+//Production Deploy
+gulp.task('produce', function(callback) {
+    runSequence(
+        'analytics',
+        'jekyll',
+        'css',
+        callback
+    );
+});
+
+gulp.task('seo', ['produce'], function(cb) {
     request('http://www.google.com/webmasters/tools/ping?sitemap=https://www.krvmedia.com/sitemap.xml');
     request('http://www.bing.com/webmaster/ping.aspx?siteMap=https://www.krvmedia.com/sitemap.xml');
     cb();

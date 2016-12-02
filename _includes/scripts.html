@@ -10,15 +10,12 @@
 })();
 
 </script> -->
-  
-<script type="text/javascript" src="{% asset_path scripts.js %}"></script>  
 
 <!-- Cloudinary --> 
 <script type="text/javascript">
    $.cloudinary.config({"api_key":"619824693495266","cloud_name":"krvmedia"});
 </script>
 <script type="text/javascript">$.cloudinary.responsive()</script>
-
 <!-- Android Bug Workaround -->
 <script>
 $(function () {
@@ -32,13 +29,13 @@ $(function () {
 
 {% if page.title == "Store" %}
 <!-- Gumroad -->
-  <script async src="https://gumroad.com/js/gumroad.js"></script>
+  <script src="https://gumroad.com/js/gumroad.js"></script>
 {% endif %}
 
 
 {% if page.layout == "post" %}
 <!-- Disqus Comment Counter-->
-  <script async id="dsq-count-scr" src="//kry8v-media.disqus.com/count.js"></script>
+  <script id="dsq-count-scr" src="//kry8v-media.disqus.com/count.js"></script>
 {% endif %}
 
 {% if page.title != "Store" %}
@@ -65,7 +62,7 @@ $(function () {
 </script>
 
 <!-- Fonts -->
-  <script async type="text/javascript" src="{% asset_path fontfaceobserver.js %}"></script>
+  <script type="text/javascript" src="{% asset_path fontfaceobserver.js %}"></script>
   <script>
     var j4 = new FontFaceObserver('Josefin Slab', {weight: 400});
     var j7 = new FontFaceObserver('Josefin Slab', {weight: 700});
@@ -77,8 +74,27 @@ $(function () {
     console.log('Fonts have been loaded');
   });
   </script>
-    
 
+  <script src="{% asset_path smoothscroll.js %}"></script>
+  <script>
+    $(window).scroll(function() {
+      if($(this).scrollTop() > 500) {
+          $('#home-nav').addClass('opaque');
+          } else {
+              $('#home-nav').removeClass('opaque');
+          }
+      });
+
+    var offset = 600;
+    var duration = 300;
+    $(window).scroll(function() {
+        if($(this).scrollTop() > offset) {
+            $('#go-up').addClass('opaque');
+        } else {
+            $('#go-up').removeClass('opaque');
+        }
+    });
+  </script>
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>

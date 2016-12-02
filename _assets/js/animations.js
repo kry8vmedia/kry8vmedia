@@ -25,22 +25,6 @@ $(window).scroll(function() {
   return false;
 });*/
 
-
-//SMOOTH SCROLL
-$(function() {
-    $('#go-up').smoothScroll(1000);
-   });
-$(function() {
-    $('#home-nav').smoothScroll(1000);
-   });
-   $(function() {
-    $('#page-nav').smoothScroll(1000);
-   });
-$(function() {
-    $('#foot').smoothScroll(1000);
-   });
-
-  
 /*DROPDOWN ANIMATIONS
 // ADD SLIDEDOWN ANIMATION TO DROPDOWN //
 $('.dropdown').on('show.bs.dropdown', function(e){

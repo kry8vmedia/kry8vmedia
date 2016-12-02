@@ -41,8 +41,10 @@ namespace :build do
   desc "Regenerate files for production"
   task :prod do
     puts "* Regenerating files for production..."
-    system "JEKYLL_ENV=production bundle exec jekyll build"
+    #system "JEKYLL_ENV=production bundle exec jekyll build"
+    system "bundle exec jekyll build"
   end
+
 
   desc "Regenerate files for production (Windows systems)"
   task :win do
