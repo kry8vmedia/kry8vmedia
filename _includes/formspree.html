@@ -1,0 +1,39 @@
+<form>
+  <input name="name" type='text' placeholder='Your name (optional)'>
+  <input name="email" type="hidden" placeholder='Your email'>
+  <textarea type="text" name="message" placeholder='Your message'></textarea>
+  <button type='submit' class="button button-blue button-big mobile-block">Send message</button>
+</form>
+
+<script>
+    var contactForm = document.querySelector('form'),
+    inputName = contactForm.querySelector('[name="name"]'),
+    inputEmail = contactForm.querySelector('[name="email"]'),
+    textAreaMessage = contactForm.querySelector('[name="message"]'),
+    sendButton = contactForm.querySelector('button');
+
+    sendButton.addEventListener('click', function(event){
+      event.preventDefault(); // prevent the form to do the post.
+
+      sendButton.innerHTML = 'sending..';
+
+      var xhr = new XMLHttpRequest();
+      xhr.open('POST', '//formspree.io/yourmail@domain.com', true);
+      xhr.setRequestHeader("Accept", "application/json")
+      xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded")
+
+      xhr.send(
+        "name=" + inputName.value +
+        "&email=" + inputEmail.value +
+        "&message=" + textAreaMessage.value);
+
+      xhr.onloadend = function (res) {
+        if (res.target.status === 200){
+          sendButton.innerHTML = 'Message sent!';
+        }
+        else {
+          sendButton.innerHTML = 'Error!';
+        }
+      }
+    });
+</script>

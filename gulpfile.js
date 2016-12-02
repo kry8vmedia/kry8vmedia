@@ -67,6 +67,9 @@ gulp.task('css', function() {
                /\.opaque/, 
                /\.affix/,
                 /\.alert/,
+                /\.alert-dismissable/,
+                /\.alert-link/,
+                /\.close/,
                 /\.collapse/,
                 /\.fade/,
                 /\.modal/,
@@ -116,6 +119,7 @@ gulp.task('produce', function(callback) {
         'analytics',
         'jekyll',
         'css',
+        'html',
         callback
     );
 });
