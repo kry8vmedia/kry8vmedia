@@ -119,7 +119,6 @@ gulp.task('produce', function(callback) {
         'analytics',
         'jekyll',
         'css',
-        'html',
         callback
     );
 });

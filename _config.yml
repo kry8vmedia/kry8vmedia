@@ -72,7 +72,7 @@ twitter:
   username: kry8vmedia
   card: /img/twitter-card.jpg 
 github_username: kry8vmedia
-twitter_username: kry8vmedia
+twitter_username: krvmedia
 google_site_verification: vWavgrIUW8L9zzRbSS3PUZtQrlOeedCKSX2szz8QjOg
 logo: /logos/kry8v-logo-black.png
 type: website
@@ -80,10 +80,10 @@ type: website
 social:
   name: Kry8v Media
   links:
-    - https://twitter.com/kry8vmedia
-    - https://www.facebook.com/kry8v
-    - https://instagram.com/kry8vmedia
-    - https://soundcloud.com/kry8vmedia
+    - https://twitter.com/krvmedia
+    - https://www.facebook.com/krvmedia
+    - https://instagram.com/krvmedia
+    - https://soundcloud.com/krvmedia
 
 image:
   twitter: /img/twitter-card.jpg

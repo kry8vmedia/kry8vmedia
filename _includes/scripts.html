@@ -11,6 +11,21 @@
 
 </script> -->
 
+{% include core-scripts.html %}
+<!-- Fonts
+  <script type="text/javascript" src="{% asset_path fontfaceobserver.js %}"></script>-->
+  <script>
+    var j4 = new FontFaceObserver('Josefin Slab', {weight: 400});
+    var j7 = new FontFaceObserver('Josefin Slab', {weight: 700});
+    var rc3 = new FontFaceObserver('Roboto Condensed', {weight: 300});
+    var ra4 = new FontFaceObserver('Raleway', {weight: 400});
+    var ra7 = new FontFaceObserver('Raleway', {weight: 700});
+
+    Promise.all([j4.load(), j7.load(), rc3.load(), ra4.load(), ra7.load()]).then(function () {
+    console.log('Fonts have been loaded');
+  });
+  </script>
+
 <!-- Cloudinary --> 
 <script src="{% asset_path cloudinary-jquery.js %}"></script>
 <script type="text/javascript">
@@ -61,20 +76,6 @@ $(function () {
   }(document, 'script', 'facebook-jssdk'));
 </script>
 
-<!-- Fonts
-  <script type="text/javascript" src="{% asset_path fontfaceobserver.js %}"></script>-->
-  <script>
-    var j4 = new FontFaceObserver('Josefin Slab', {weight: 400});
-    var j7 = new FontFaceObserver('Josefin Slab', {weight: 700});
-    var rc3 = new FontFaceObserver('Roboto Condensed', {weight: 300});
-    var ra4 = new FontFaceObserver('Raleway', {weight: 400});
-    var ra7 = new FontFaceObserver('Raleway', {weight: 700});
-
-    Promise.all([j4.load(), j7.load(), rc3.load(), ra4.load(), ra7.load()]).then(function () {
-    console.log('Fonts have been loaded');
-  });
-  </script>
-
   <!--<script src="{% asset_path smoothscroll.js %}"></script>-->
   <script>
     $(window).scroll(function() {
@@ -95,7 +96,7 @@ $(function () {
         }
     });
   </script>
-  <script async src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
+  <script async src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.0/jquery.validate.min.js"></script>
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
