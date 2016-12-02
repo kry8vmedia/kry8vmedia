@@ -1,9 +1,9 @@
 ---
 title:  
 date:   YYYY-MM-DD HH:MM:SS +0200
-categories:['','']
+categories: ['','']
 tags: ['','']
-image: img/posts
+img: 
 comments: true
 post:
 page-id: post-page
