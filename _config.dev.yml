@@ -25,6 +25,7 @@ exclude:
   - package.json
   - gulpfile.js
   - font-awesome.scss
+  - admin
 
 markdown: kramdown
 

@@ -1,4 +1,4 @@
-<form id="contact-form" method="POST" >
+<form id="contact-form">
   <div class="form-group">
     <label class="sr-only" for="inputName">Name</label>
     <div class="input-group">
@@ -35,15 +35,17 @@
   <div class="form-group">
     <button id="sendMessage" type="submit" class="btn btn-warning" value="Send"><i class="fa fa-send fa-fw"></i>Send
     </button>
-    <input type="hidden" name="_next" value="{{ site.url }}/message-sent"/>
+    
   </div>
-
+  <input type="hidden" name="_next" value="{{ site.url }}/message-sent"/>
 
 </form>
 
 <script>
-  var contactform =  document.getElementById('contactform');
+  var contactform =  document.getElementById('contact-form');
       contactform.setAttribute('action', '//formspree.io/' + 'contact' + '@' + 'krvmedia' + '.' + 'com');
+      contactform.setAttribute('method', 'POST');
+
 </script>
 
 <!--

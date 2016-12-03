@@ -177,7 +177,13 @@ footer {
 .store-page {
     @extend %jumbotron;
     @include bg-image('img/store-1', 0.8, 0.8);
-}
+    }
+
+#videos {
+    .youtube-video {
+        margin-bottom: 30px;
+        }
+    }
 
 .contact-page {
     @extend %jumbotron;
@@ -189,10 +195,12 @@ footer {
 
 .success-page {
     @extend %jumbotron;
-    @include bg-image('img/bg_4', 0.8, 0.8);
-    @include breakpoint($jerry) {
-        @include bg-overlay(0.7, 0.7);
-    }
+    background: transparent;
+}
+
+.message-sent-page {
+    @extend %jumbotron;
+    background: transparent;
 }
 
 .site-page {
@@ -236,21 +244,18 @@ footer {
 }
 
 .success-footer {
-    @extend %jumbotron;
+    background: transparent;
+}
+.success-bg {
     @include bg-image('img/bg_4', 0.8, 0.8);
-    @include breakpoint($jerry) {
-        @include bg-overlay(0.7, 0.7);
-    }
-        @include breakpoint($spike) {
-            background-position-y: -546px;
-            height: 533px;
-    }
-        @include breakpoint($way-big) {
-            background-position-y: -650px;
-            height: 533px;
-    }
 }
 
+.message-sent-footer {
+    background: transparent;
+}
+.message-sent-bg {
+    @include bg-image('img/contact-2', 0.8, 0.8);
+}
 //Blog page
 .blogger.content { padding-top: 7.5em; } 
 

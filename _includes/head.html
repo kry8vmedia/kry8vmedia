@@ -4,6 +4,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
   {% seo %}
+  <!-- Head Scripts -->
+  <script async src="{% asset_path head.js %}"></script>
   {% capture critical %}{% include critical.min.scss %}{% endcapture %}
   <link rel="preload" href="{{ site.url }}/css/un.style.css" as="style" onload="this.rel='stylesheet'"> 
   <noscript><link rel="stylesheet" href="{{ site.url }}/css/un.style.css"></noscript>
@@ -23,11 +25,6 @@
     {{ loadCSSPolyfill | uglify | strip }}
   </script>
   <link rel="shortcut icon" href="{{ site.url }}/img/icons/favicon.ico" type="image/x-icon" />
-
-  <!-- jQuery -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-  <script async src="{% asset_path typed.js %}"></script>
-
   <link rel="apple-touch-icon" href="{{ site.url }}/img/icons/apple-touch-icon.png" />
   <link rel="apple-touch-icon" sizes="57x57" href="{{ site.url }}/img/icons/apple-touch-icon-57x57.png" />
   <link rel="apple-touch-icon" sizes="72x72" href="{{ site.url }}/img/icons/apple-touch-icon-72x72.png" />

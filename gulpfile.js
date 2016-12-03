@@ -3,7 +3,7 @@ var gulp = require('gulp'),
     shell = require('gulp-shell');
 //Html requirements    
 var minifyHTML = require('gulp-minify-html');
-//Main CSS requirements
+//CSS requirements
 var gulp = require('gulp'),
     sass = require('gulp-sass'),
     importCss = require('gulp-import-css'),
@@ -93,6 +93,11 @@ gulp.task('fb-analytics', function() {
     .pipe(gulp.dest('assets/'));
 });
 
+//jQuery
+gulp.task('jquery', function() {
+  return download('https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js')
+    .pipe(gulp.dest('_assets/js'));
+});
 
 //Development Deploy
 // Setup Server
@@ -122,6 +127,7 @@ gulp.task('local', function(callback) {
 //Production Deploy
 gulp.task('produce', function(callback) {
     runSequence(
+        'jquery',
         'analytics',
         'fb-analytics',
         'jekyll',
