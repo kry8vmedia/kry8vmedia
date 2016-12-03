@@ -27,7 +27,7 @@
   </script>
 
 <!-- Cloudinary --> 
-<script src="{% asset_path cloudinary-jquery.js %}"></script>
+<script aync src="{% asset_path cloudinary-jquery.js %}"></script>
 <script type="text/javascript">
    $.cloudinary.config({"api_key":"619824693495266","cloud_name":"krvmedia"});
 </script>
@@ -51,7 +51,7 @@ $(function () {
 
 
 <!-- Disqus Comment Counter-->
-  <script id="dsq-count-scr" src="//kry8v-media.disqus.com/count.js"></script>
+  <script async id="dsq-count-scr" src="//kry8v-media.disqus.com/count.js"></script>
 
 {% if page.title != "Store" %}
   {% include analytics.html %}
