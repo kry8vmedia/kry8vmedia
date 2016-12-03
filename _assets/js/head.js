@@ -1,4 +1,5 @@
 //= require jquery.min
+//= require cloudinary-jquery
 //= require typed
 //= require fontfaceobserver
 $(function(){
