@@ -23,9 +23,9 @@ description: Read about what we are up to!
         </h2>
         {% assign author = site.data.authors[post.author] %}
         <p class="read-time">
-          <span class="post-meta">{{ post.date | date: "%a, %-d %B, %Y" }}</span> | {{ page.content | reading_time }} reading time
+          <span class="post-meta">{{ post.date | date: "%a, %-d %B, %Y" }}</span> | {{ post.content | reading_time }} reading time
         </p>
-        {{ post.excerpt }}
+        <img class="post-excerpt-image" src="https://res.cloudinary.com/krvmedia/c_fill,w_180,dpr_auto,f_auto,q_auto/{{ post.img }}" title="{{ post.title }}" alt="{{ post.title }}" /> {{ post.excerpt }}
       </li>
     {% endfor %}
   </ul>

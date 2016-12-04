@@ -258,10 +258,16 @@ footer {
 }
 //Blog page
 .blogger.content { padding-top: 7.5em; } 
+.post-excerpt-image {
+    float: left;
+    margin-right: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px $dark-gray;
+}
 
 //Post page 
 .post-image {
-    height: 600px;
+    height: 500px;
     position: relative;
     width: 100%;
     overflow: hidden;
@@ -275,15 +281,15 @@ footer {
     @include breakpoint($ben) {
             height: 300px;
         }
-        @include breakpoint($four-arms) {
-            height: 350px;
+        @include breakpoint($way-big) {
+            height: 600px;
         }
-    @include breakpoint($four-arms) {
-            height: 370px;
+    @include breakpoint($ridiculous) {
+            height: 600px;
         }
     .featured-image {
         background: black;
-        opacity: 0.7;
+        //opacity: 0.7;
     }
     h1 {
         position: absolute;
@@ -298,7 +304,7 @@ footer {
         @include breakpoint ($spike) {
             font-size: 46px;
         }
-        bottom: 0;
+        top: 0;
         margin: 0;
         padding: 15px 1px;
         text-align: center;

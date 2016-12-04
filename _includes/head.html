@@ -9,6 +9,10 @@
   {% capture critical %}{% include critical.min.scss %}{% endcapture %}
   <link rel="preload" href="{{ site.url }}/css/un.style.css" as="style" onload="this.rel='stylesheet'"> 
   <noscript><link rel="stylesheet" href="{{ site.url }}/css/un.style.css"></noscript>
+  <script>
+    {{ loadCSS | uglify | strip }}
+    {{ loadCSSPolyfill | uglify | strip }}
+  </script>
   <style>
     {{ critical | scssify }}
     {% if page.home %}
@@ -20,10 +24,7 @@
   </style>
   {% capture loadCSS %}{% include loadCSS.js %}{% endcapture %}
   {% capture loadCSSPolyfill %}{% include cssrelpreload.js %}{% endcapture %}
-  <script>
-    {{ loadCSS | uglify | strip }}
-    {{ loadCSSPolyfill | uglify | strip }}
-  </script>
+  
   <link rel="shortcut icon" href="{{ site.url }}/img/icons/favicon.ico" type="image/x-icon" />
   <link rel="apple-touch-icon" href="{{ site.url }}/img/icons/apple-touch-icon.png" />
   <link rel="apple-touch-icon" sizes="57x57" href="{{ site.url }}/img/icons/apple-touch-icon-57x57.png" />

@@ -1,6 +1,13 @@
 blog-image:
-    id: 1
+    id: 0
     title: Blog Image
     caption: Collection Test
     img-src: img/store-2
     alt: Collection Test
+
+blogging-in-code:
+    id: 1
+    title: Blogging in Code
+    caption: Is it code or a blog post?
+    img-src: img/blogging-in-code
+    alt: Is it code or a blog post?
