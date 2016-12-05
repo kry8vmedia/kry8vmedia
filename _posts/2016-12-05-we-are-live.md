@@ -5,7 +5,7 @@ date:   2016-12-05 10:30:00 +0200
 categories: ['Technology']
 tags: ['live','blog', 'update', 'Jekyll', 'Namecheap', 'Netlify', 'Cloudinary', 'Formspree', 'MailChimp', 'Bootstrap', 'SCSS', 'Disqus']
 img: img/we-are-live-2
-image: https://res.cloudinary.com/krvmedia/c_fill,w_auto,dpr_auto,f_auto,q_auto/img/we-are-live-2
+image: https://res.cloudinary.com/krvmedia/c_fill,w_1200,f_jpg/img/we-are-live-2
 comments: true
 post: true
 page-id: post-page

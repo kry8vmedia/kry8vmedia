@@ -5,7 +5,7 @@ date:   YYYY-MM-DD HH:MM:SS +0200
 categories: ['','']
 tags: ['','']
 img: 
-image: https://res.cloudinary.com/krvmedia/c_fill,w_auto,dpr_auto,f_auto,q_auto/
+image: https://res.cloudinary.com/krvmedia/c_fill,w_1200,f_jpg/
 comments: true
 post: true
 page-id: post-page
