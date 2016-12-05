@@ -17,8 +17,6 @@
       {{ homecriticalcss | scssify }}
     {% endif %}
   </style>
-  {% capture loadCSS %}{% include loadCSS.js %}{% endcapture %}
-  {% capture loadCSSPolyfill %}{% include cssrelpreload.js %}{% endcapture %}
   
   <link rel="shortcut icon" href="{{ site.url }}/img/icons/favicon.ico" type="image/x-icon" />
   <link rel="apple-touch-icon" href="{{ site.url }}/img/icons/apple-touch-icon.png" />
