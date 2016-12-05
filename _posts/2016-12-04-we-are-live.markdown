@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  We Are Live
-date:   2016-12-04 14:00:00 +0200
+date:   2016-12-05 10:00:00 +0200
 categories: ['Technology']
 tags: ['live','blog', 'update', 'Jekyll', 'Namecheap', 'Netlify', 'Cloudinary', 'Formspree', 'MailChimp', 'Bootstrap', 'SCSS', 'Disqus']
 img: img/we-are-live-2
@@ -15,8 +15,9 @@ type: article
 publisher:  https://www.facebook.com/krvmedia
 author: chanda
 ---
-So I have been planning on creating this website for a while now. It took some work but at least now I can share quite a lot from one, awesome central location. Read on and find out how I got this online.
+So I have been planning on creating this website for a while now. It took some work but at least now I can share quite a lot from one awesome, central location. Read on and find out how I got this online.
 <!--more-->
+<hr class="post-separator" />
 
 The first decision I had to make was what kind of website I would build. I wanted a small, easy-to-maintain website that I could fully design. That being said, services such as [WordPress] and [Blogger] were not an option. No hate on the guys, I've used them before but something about coding appeals to me (I'm studying Computer Science).  The only ~~problem~~ advantage with doing the coding is the ~~amount of code I would have to write and what not.~~ freedom to make my own design choices.
 
@@ -31,7 +32,7 @@ Everything I've said before this section is open source and free. When it comes 
 Hosting was a bit tricky to figure out because...I wanted something free, but also fast. The source code of this website is hosted on [Github] so I had the choice of using GitHub Pages for hosting. Just when I was about to do so, I came across a company called [Netlify] that uses a <abbr title="Content Delivery Network">CDN</abbr> system to serve websites it hosts. Long story short, that's really good web performance and increased [page speed] for your website. They also have really cool features I couldn't turn down.
 
 ### Other Cool Stuff and Optimizations
-Anyone who pays attention to websites these days is familiar with the word 'responsive'. You know, the thing that makes websites look good **and** consistent on all devices? Well, with bootstrap that's pretty easy but when it comes to images it can get a little tricky. There's so many devices to cater for and some devices can't handle large images. And don't argue about resizing in CSS because what is delivered is still a large image taking up a lot of bandwidth. Then I met [Cloudinary]. Cloudinary is the service I use to serve responsive images that are transformed on the fly depending on the device one is using. So if I have a 1000px by 1000px image in my archive butonly need a 100px by 100px version of it, I can just tell Cloudinary to transform it at the same time I'm requesting it. And get this: they use a CDN too! What's not to love about them?
+Anyone who pays attention to websites these days is familiar with the word 'responsive'. You know, the thing that makes websites look good **and** consistent on all devices? Well, with bootstrap that's pretty easy but when it comes to images it can get a little tricky. There's so many devices to cater for and some devices can't handle large images. And don't argue about resizing in CSS because what is delivered is still a large image taking up a lot of bandwidth. Then I met [Cloudinary]. Cloudinary is the service I use to serve responsive images that are transformed on the fly depending on the device one is using. So if I have a 1000px by 1000px image in my archive but only need a 100px by 100px version of it, I can just tell Cloudinary to transform it at the same time I'm requesting it. And get this: they use a CDN too! What's not to love about them?
 
 Since this is a static website, it has no databases and back-ends and stuff like that. It's 'simple' front-end code. So for the contact forms and newsletter subscriptions I use [Formspree] and [MailChimp] respectively. They make things for us front-end developers so much easier! Lastly, if you scroll down, you should see a comment section<span>&mdash;</span>which also needs a back-end and database<span>&mdash;</span>that runs thanks to what I believe is the best web comment/audience building service out there: [Disqus]! Really flexible and easy to implement.
 

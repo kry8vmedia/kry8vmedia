@@ -140,6 +140,9 @@ footer {
     a:hover, a:focus {
         color: $primary-color;
     }
+    .copyright {
+        color: white;
+    }
     p {
         margin: 15px 0 0;
     }
@@ -179,12 +182,6 @@ footer {
     @include bg-image('img/store-1', 0.8, 0.8);
     }
 
-#videos {
-    .youtube-video {
-        margin-bottom: 30px;
-        }
-    }
-
 .contact-page {
     @extend %jumbotron;
     @include bg-image('img/contact-2');
@@ -206,6 +203,12 @@ footer {
 .site-page {
     @extend %jumbotron;
     @include bg-image('img/organised', 0.8, 0.8);
+}
+
+.disclosures-page {
+    @extend %jumbotron;
+    @include bg-image('img/disclosures-1', 0.5, 0.5);
+    background-position-y: -140px;
 }
 
 //Footer Backgrounds
@@ -235,6 +238,9 @@ footer {
     @include bg-image('img/store-1');
 }
 
+.disclosures-footer {
+    @include bg-image('img/disclosures-1', 0.5, 0.5);
+}
 .contact-footer {
     @extend %jumbotron;
     @include bg-image('img/contact-2');
@@ -312,6 +318,9 @@ footer {
         //@include text-shadow(0.6);
         @include bg-overlay(1, 1);
     }
+}
+.post-separator {
+    border: 1px solid lighten($primary-color, 20%);
 }
 
 //Content Spacing

@@ -16,3 +16,4 @@ publisher: https://www.facebook.com/krvmedia
 ---
 
 <!--more-->
+<hr class="post-separator" />

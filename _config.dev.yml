@@ -26,6 +26,7 @@ exclude:
   - gulpfile.js
   - font-awesome.scss
   - admin
+  - ignore
 
 markdown: kramdown
 

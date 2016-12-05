@@ -22,7 +22,7 @@ pageClass: site-page
                         {% assign visible_pages = site.html_pages | sort: 'visible_weight' %}
                         {% for p in visible_pages %}
                             {% if p.visible_weight %}
-                                <li><a href="{{ p.url }}">{{ p.v-name }}</a></li>
+                                <li><a href="{{ p.url }}" title="{{ p.title }}">{{ p.v-name }}</a></li>
                             {% endif %}
                         {% endfor %}
                     </ul>
