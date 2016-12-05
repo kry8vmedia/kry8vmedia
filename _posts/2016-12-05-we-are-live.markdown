@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  We Are Live
-date:   2016-12-05 10:00:00 +0200
+date:   2016-12-05 10:30:00 +0200
 categories: ['Technology']
 tags: ['live','blog', 'update', 'Jekyll', 'Namecheap', 'Netlify', 'Cloudinary', 'Formspree', 'MailChimp', 'Bootstrap', 'SCSS', 'Disqus']
 img: img/we-are-live-2
@@ -19,7 +19,7 @@ So I have been planning on creating this website for a while now. It took some w
 <!--more-->
 <hr class="post-separator" />
 
-The first decision I had to make was what kind of website I would build. I wanted a small, easy-to-maintain website that I could fully design. That being said, services such as [WordPress] and [Blogger] were not an option. No hate on the guys, I've used them before but something about coding appeals to me (I'm studying Computer Science).  The only ~~problem~~ advantage with doing the coding is the ~~amount of code I would have to write and what not.~~ freedom to make my own design choices.
+The first decision I had to make was what kind of website I would build. I wanted a small, easy-to-maintain website that I could fully design. That being said, services such as [WordPress] and [Blogger] were not an option. In no way am I discouraging using their services<span>&mdash;</span>I've used each one of them before<span>&mdash;</span>but something about coding appeals to me (I'm studying Computer Science).  The only ~~problem~~ advantage with doing the coding is the ~~amount of code I would have to write and what not.~~ freedom to make my own design choices.
 
 ### Thank You Jekyll, Bootstrap and SCSS
 I'm thankful for these services, they are super helpful. [Jekyll] is a static website generator which has helped me tonnes with creating this website. It has functions, variables, loops and templates that makes it easier to write and maintain <abbr title="HyperText Markup Language">HTML</abbr> code with little to no repeated code. This is all thanks to [Liquid], a templating language created by [Shopify] and written in [Ruby], which is a breeze to learn, especially if one is familiar with programming. 
