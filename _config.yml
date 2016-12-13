@@ -61,6 +61,11 @@ defaults:
       image: https://krvmedia.com/img/blog-image.jpg
   
 #Site settings
+collections: 
+  project-downloads:
+    output: true
+  singles-downloads:
+  
 title: Kry8v Media
 email: contact@krvmedia.com
 personal-email: c.mulenga@krvmedia.com

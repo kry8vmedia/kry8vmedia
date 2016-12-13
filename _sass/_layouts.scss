@@ -182,6 +182,11 @@ footer {
     @include bg-image('img/store-1', 0.8, 0.8);
     }
 
+.downloads-page {
+    @extend %jumbotron;
+    @include bg-image('img/headphones', 0.7, 0.7);
+}
+
 .contact-page {
     @extend %jumbotron;
     @include bg-image('img/contact-2');
@@ -238,6 +243,10 @@ footer {
     @include bg-image('img/store-1');
 }
 
+.downloads-footer {
+    @include bg-image('img/headphones', 0.7, 0.7);
+}
+
 .disclosures-footer {
     @include bg-image('img/disclosures-1', 0.5, 0.5);
 }
@@ -267,6 +276,7 @@ footer {
 .post-excerpt-image {
     float: left;
     margin-right: 20px;
+    margin-bottom: 10px;
     border-radius: 10px;
     box-shadow: 1px 1px 1px $dark-gray;
 }
@@ -362,4 +372,23 @@ footer {
     position: absolute;
     bottom: 10px;
     right: 5px;
+}
+
+//Download Pages
+ul.centered-list {
+    display: table;
+    margin: 0 auto;
+}
+audio {
+    width: 100%;
+}
+.project-artwork {
+    float: left;
+    width: 150px;
+    margin: 30px 20px 10px 0;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px $dark-gray;
+}
+.row.screen-width {
+    width: 100%;
 }

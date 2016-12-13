@@ -1,0 +1,136 @@
+---
+layout: jumbo
+permalink: /downloads
+headline: <i class="fa fa-download fa-2x"></i>
+tagline: (Exclusive Downloads)
+title: Downloads
+pageClass: downloads-page
+pageFooter: downloads-footer
+navigation_weight: 6
+visible_weight: 6
+v-name: Downloads
+image: https://res.cloudinary.com/krvmedia/c_fill,w_1200,f_jpg/img/headphones
+page-id: jumbo-page
+type: music.playlist
+description: Exclusive downloads of projects that have been recorded at, produced by, mixed and mastered by or fully realised by the producers of Kry8v Media.
+---
+
+<!-- SINGLES DOWNLOADS -->
+<div id="singles" class="section-a">
+  <div class="container">
+    <div class="row screen-width">
+      <div class="full-width-column">
+        <h2>Singles</h2>
+        <hr class="section-heading-spacer2">
+        <div class="clearfix"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="section-a attached-block">
+    <div class="container bottom-padding">
+        <div class="row screen-width">
+            <div class="third-width-column">
+                <ul class="list-unstyled centered-list">
+                    {% for s in site.singles-downloads %}
+                        <li>
+                            <img class="post-excerpt-image" src="https://res.cloudinary.com/krvmedia/c_fill,w_100,dpr_auto,f_auto,q_auto/{{ s.artwork }}" title="{{ s.title }}" alt="{{ s.title }}" /> {{ s.artist }} - {{ s.track }} <a {%if s.link %}href="//res.cloudinary.com/krvmedia/video/upload/audio/{{ s.link }}"{% else %}href="{{ s.bit-link }}"{% endif %} title="{{ s.artist }} - {{ s.title }}" download="{{ s.artist }} - {{ s.title }} [krvmedia.com]"> Download</a>
+                            <br /><small>Produced by {{ s.producer }}</small>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /.SINGLES DOWNLOADS -->
+
+<!-- FULL LENGTH PROJECT DOWNLOADS -->
+<div id="full-length" class="section-b">
+  <div class="container">
+    <div class="row screen-width">
+      <div class="full-width-column">
+        <h2>Full Length Projects</h2>
+        <hr class="section-heading-spacer2">
+        <div class="clearfix"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="section-b attached-block">
+    <div class="container bottom-padding">
+        <div class="row screen-width">
+
+            <div class="third-width-column">
+
+                <ul class="list-unstyled centered-list">
+                    {% for p in site.project-downloads %}
+                        <li>
+                            <img class="post-excerpt-image" src="https://res.cloudinary.com/krvmedia/c_fill,w_100,dpr_auto,f_auto,q_auto/{{ p.artwork }}" title="{{ p.title }}" alt="{{ p.title }}" />
+                            <p style="padding-top: 0; float: right;"> 
+                                <a href="{{ p.url }}" title="{{ p.title }}">{{ p.project-name }}</a>
+                                <br /><small>{{ p.project-artist }}<br />{{ p.project-year }}</small>
+                            </p>
+                        </li>
+                    {% endfor %}
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /.FULL LENGTH PROJECT DOWNLOADS -->
+
+<!-- STREAM -->
+<div id="stream" class="section-c">
+  <div class="container">
+    <div class="row">
+      <div class="full-width-column">
+        <h2>Stream</h2>
+        <hr class="section-heading-spacer2">
+        <div class="clearfix"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="section-c attached-block">
+  <div class="container">
+
+    <div class="row showcase">
+      <div class="full-width-column">
+        <div id="mainwrap">
+          
+            <div id="nowPlay">
+                <span class="left" id="npAction">Paused...</span>
+                <span class="right" id="npTitle"></span>
+            </div>
+            <div id="audiowrap">
+                <div id="audio0">
+                    <audio preload id="audio1" controls="controls">Your browser does not support HTML5 Audio!</audio>
+                </div>
+                <div id="tracks">
+                    <a id="btnPrev">&laquo;</a>
+                    <a id="btnNext">&raquo;</a>
+                </div>
+            </div>
+            <div id="plwrap">
+                <ul id="plList" class="list-unstyled">
+                    <li>
+                        <div class="plItem">
+                            <div class="plNum hidden">03</div>
+                            <div class="plTitle">What You Love (Prod. by Bacci x STC The Producer)</div>
+                            <div class="plLength">03:12</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- /.STREAM -->
+
+{% include arrow.html %}

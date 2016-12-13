@@ -101,6 +101,7 @@ body {
     p {
         padding-top: 30px;
         font-weight: 400;
+        }
         @include breakpoint($way-big) {
             &.tagline {
                 position: absolute;

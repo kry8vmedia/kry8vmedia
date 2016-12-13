@@ -1,0 +1,57 @@
+---
+layout: jumbo
+type: music.playlist
+---
+
+<div class="section-b">
+  <div class="container">
+    <div class="row">
+      <div class="full-width-column">
+        <h2>{{ page.descriptive-heading }}</h2>
+        <hr class="section-heading-spacer2" />
+        <div class="clearfix"></div>
+        <p class="centered-paragraph">
+          {% include project-artwork.html side="left" %}
+          
+          {{ content }}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- TRACKLIST -->
+<div id="tracklist" class="section-a">
+  <div class="container">
+    <div class="row">
+      <div class="full-width-column">
+        <h2>Tracklist</h2>
+        <hr class="section-heading-spacer2">
+        <div class="clearfix"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="section-a attached-block">
+  <div class="container">
+
+    <div class="row showcase">
+      <div class="full-width-column">
+          <ul class="list-unstyled centered-list">
+            {% for track in page.tracklist %}
+            <li>{{ track }}</li>
+            {% endfor %}
+          </ul>
+          {% if page.download %}
+            <div id="download">
+              <p class="centered-paragraph"><a role="button" class="btn buy-button" href="{{ page.download-link}}">Download</a></p>
+            </div>
+          {% endif %}
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- /.TRACKLIST -->
+
+{% include arrow.html %}

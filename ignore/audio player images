@@ -1,0 +1,35 @@
+First, add an image reference for each track in the JSON like so:
+
+tracks = [{
+    "track": 1,
+    "name": "All This Is - Joe L.'s Studio",
+    "length": "02:46",
+    "file": "JLS_ATI",
+    "artwork": "//example.com/art-1.jpg"
+}, {
+    ...
+
+Then, create a new HTML element and an image "placeholder" inside it. This is where you your artwork will be displayed.
+
+<div>
+    <img src="" alt="">
+</div>
+
+Lastly, you'll need to update the loadTrack function expression so that each track's artwork will be displayed inside that element. In the snippet below, we're checking to see if artwork exists for the loaded track. If it does, we update the "placeholder" image source and if it doesn't, we show a default image.
+
+var art = $('#artwork img');
+if (tracks[id].artwork !== '') {
+    art.prop('src', tracks[id].artwork);
+} else {
+    art.prop('src', '//example.com/no-art.jpg');
+}
+
+Keep in mind that you'll need to add CSS to make your images responsive so they fit the container:
+
+#artwork img {
+    display: block;
+    height: auto;
+    width: 100%;
+}
+
+I'd also recommend keeping the height and width of each image consistent (I'm guessing a square, like a CD or record).

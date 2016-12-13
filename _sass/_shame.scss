@@ -1,1 +1,5 @@
-
+div.sidebar-column {
+    @include breakpoint($subscribe-box) {
+        margin-top: 30px;
+    }
+}

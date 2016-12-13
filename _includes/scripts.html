@@ -76,8 +76,8 @@ $(function () {
   }(document, 'script', 'facebook-jssdk'));
 </script>
 
-  <!--<script src="{% asset_path smoothscroll.js %}"></script>-->
-  <script>
+{% javascript audio-player %}  
+<script>
     $(window).scroll(function() {
       if($(this).scrollTop() > 500) {
           $('#home-nav').addClass('opaque');
