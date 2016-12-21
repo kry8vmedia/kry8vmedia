@@ -22,3 +22,5 @@ descriptive-heading: VOX
 STC The Producer is, as you have guessed, a producer at core. However, this project exposes a different side of STC, the lyrically mind blowing side of him. Considering the fact that his previous projects were beat tapes, which you can stream [here]({{ site.url }}/music#beat-tapes), it is a completely novel experience to have STC take up both the producer role and the artist role in a single project&mdash;now that is typically 'Kry8v' of him. A project worth looking forward to.
 
 The Extended Play is set to be released on Friday, 16th December, 2016. Until then feel free to either [stream]({{ site.url }}/downloads#stream) or [download]({{ site.url }}/downloads#singles) the banging single 'What You Love'.
+
+**UPDATE:** Owing to conditions beyond our control, VOX will be releasd on Thursday, 22nd December, 2016 at noon. We apologize for the delayed release.
