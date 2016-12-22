@@ -17,13 +17,38 @@ jQuery(function ($) {
     if (supportsAudio) {
         var index = 0,
             playing = false,
-            mediaPath = '//res.cloudinary.com/krvmedia/video/upload/',
+            mediaPath = '//res.cloudinary.com/krvmedia/video/upload/br_192/q_100/',
             extension = '',
             tracks = [{
+                "track": 1,
+                "name": "STC The Producer - Really Dope Drums",
+                "length": "00:28",
+                "file": "audio/stc-really-dope-drums"
+            }, {
+                "track": 2,
+                "name": "STC The Producer - Dreams",
+                "length": "04:23",
+                "file": "audio/stc-dreams"
+            }, {
                 "track": 3,
-                "name": "What You Love (Prod. by Bacci x STC The Producer)",
+                "name": "STC The Producer - What You Love (Prod. by Bacci x STC The Producer)",
                 "length": "03:12",
                 "file": "v1481567069/audio/stc-what-you-love"
+            }, {
+                "track": 4,
+                "name": "STC The Producer - For My Father",
+                "length": "03:09",
+                "file": "audio/stc-for-my-father"
+            }, {
+                "track": 5,
+                "name": "STC The Producer - Noise",
+                "length": "03:09",
+                "file": "audio/stc-noise"
+            }, {
+                "track": 6,
+                "name": "STC The Producer - Ubwali (Panda Cover)",
+                "length": "04:11",
+                "file": "audio/stc-ubwali-panda-cover"
             }],
             trackCount = tracks.length,
             npAction = $('#npAction'),
