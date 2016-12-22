@@ -14,7 +14,7 @@ project-artist: STC The Producer
 project-year: 2016
 artwork: artwork/vox-ep
 tracklist: ['Really Dope Drums', 'Dreams', 'What You Love (Prod. by Bacci x STC The Producer)', 'For My Father', 'Noise', 'Ubwali (Panda Cover)']
-download: false
+download: true
 download-link: https://go.krvmedia.com/2hmotAi
 descriptive-heading: VOX
 ---
