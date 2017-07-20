@@ -9,6 +9,7 @@ gems:
   - breakpoint
 
 include:
+  - admin
   - _pages
   - _img
   - .htaccess
