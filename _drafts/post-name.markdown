@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  
-date:   YYYY-MM-DD HH:MM:SS +0200
+#date:   YYYY-MM-DD HH:MM:SS +0200
 categories: ['','']
 tags: ['','']
 img: 
