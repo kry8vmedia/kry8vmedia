@@ -25,7 +25,6 @@ exclude:
   - style.css
   - package.json
   - gulpfile.js
-  - admin
   - ignore
 
 markdown: kramdown
