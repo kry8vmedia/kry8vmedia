@@ -3,12 +3,11 @@ backend:
   repo: kry8vmedia/kry8vmedia # Path to your Github repository
   branch: master # Branch to update (master by default)
 
-publish_mode: editorial_workflow
 media_folder: "img/uploads" # Folder where user uploaded files should go
 
 collections:
-  - name: "blog" # Used in routes, e.g. /admin/collections/blog
-    label: "Blog" # Used in the UI
+  - name: "posts" # Used in routes, e.g. /admin/collections/blog
+    label: "Posts" # Used in the UI
     folder: "_posts/" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template i.e. YYYY-MM-DD-title.md
@@ -18,9 +17,9 @@ collections:
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Featured Image", name: "img", widget: "image"}
       - {label: "Webpage Image", name: "image", widget: "image"}
-      - {label: "Comments", name: "comments", widget: "string", default: "true"}
-      - {label: "Published", name: "published", widget: "string", default: "false"}
-      - {label: "Post", name: "post", widget: "string", default: "true"}
+      - {label: "Comments", name: "comments", widget: "select", default: "true, false"}
+      - {label: "Published", name: "published", widget: "select", default: "true, false"}
+      - {label: "Post", name: "post", widget: "hidden", default: "true"}
       - {label: "Type", name: "type", widget: "hidden", default: "article"}
       - {label: "Publisher", name: "publisher", widget: "hidden", default: "https://www.facebook.com/krvmedia"}
       - {label: "Webpage Description", name: "description", widget: "string"}
