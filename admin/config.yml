@@ -18,8 +18,8 @@ collections:
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Featured Image", name: "img", widget: "image"}
       - {label: "Webpage Image", name: "image", widget: "image"}
-      - {label: "Comments", name: "comments", widget: "select", options: "true, false"}
-      - {label: "Published", name: "published", widget: "select", options: "true, false"}
+      - {label: "Comments", name: "comments", widget: "string", default: "true"}
+      - {label: "Published", name: "published", widget: "string", default: "true"}
       - {label: "Post", name: "post", widget: "hidden", default: "true"}
       - {label: "Type", name: "type", widget: "hidden", default: "article"}
       - {label: "Publisher", name: "publisher", widget: "hidden", default: "https://www.facebook.com/krvmedia"}

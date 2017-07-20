@@ -12,6 +12,7 @@ include:
   - _pages
   - _img
   - .htaccess
+  - admin
 
 exclude:
   - node_modules
@@ -25,7 +26,6 @@ exclude:
   - package.json
   - gulpfile.js
   - font-awesome.scss
-  - admin
   - ignore
 
 markdown: kramdown
