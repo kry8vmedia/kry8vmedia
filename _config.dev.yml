@@ -22,7 +22,6 @@ include:
   - _pages
   - _img
   - .htaccess
-  - admin
 
 exclude:
   - node_modules

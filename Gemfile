@@ -31,4 +31,5 @@ group :jekyll_plugins do
     gem 'compass'
     gem 'jekyll-cloudinary'
     gem 'jekyll-autoprefixer'
+    gem 'jekyll-admin'
 end
