@@ -1,4 +1,14 @@
 #Build settings
+plugins: [jekyll-admin]
+
+jekyll-admin:
+  hidden-links:
+   #- posts
+   #- pages
+   #- staticfiles
+   #- datafiles
+   #- configuration
+
 gems:
   - jekyll-assets
   - jekyll-cloudinary
