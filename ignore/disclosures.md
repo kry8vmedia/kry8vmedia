@@ -1,14 +1,13 @@
 ---
-title: Disclosures
-permalink: "/disclosures"
 layout: jumbo
+permalink: /disclosures
 headline: Terms | Conditions | Privacy Policy
+title: Disclosures
 pageClass: disclosure-page
 pageFooter: disclosure-footer
 v-name: Disclosures
 page-id: jumbo-page
 ---
-
 Dear reader,
 
 Kry8v Media is a business. We earn funds through the work we do on this site.

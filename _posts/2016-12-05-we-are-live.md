@@ -1,33 +1,20 @@
 ---
-title: We Are Live
-date: 2016-12-05 10:30:00 +02:00
-categories:
-- Technology
-tags:
-- live
-- blog
-- update
-- Jekyll
-- Namecheap
-- Netlify
-- Cloudinary
-- Formspree
-- MailChimp
-- Bootstrap
-- SCSS
-- Disqus
 layout: post
+title:  We Are Live
+date:   2016-12-05 10:30:00 +0200
+categories: ['Technology']
+tags: ['live','blog', 'update', 'Jekyll', 'Namecheap', 'Netlify', 'Cloudinary', 'Formspree', 'MailChimp', 'Bootstrap', 'SCSS', 'Disqus']
 img: img/we-are-live-2
 image: https://res.cloudinary.com/krvmedia/c_fill,w_1200,f_jpg/img/we-are-live-2
 comments: true
 post: true
 page-id: post-page
+published: true
 description: We are live! Bookmark our website or follow us on social media for updates.
 type: article
-publisher: https://www.facebook.com/krvmedia
+publisher:  https://www.facebook.com/krvmedia
 author: chanda
 ---
-
 So I have been planning on creating this website for a while now. It took some work but at least now I can share quite a lot from one awesome, central location. Read on and find out how I got this online.
 <!--more-->
 <hr class="post-separator" />
