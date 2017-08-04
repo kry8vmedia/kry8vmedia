@@ -32,7 +32,7 @@ tracklist:
   title="Genesis - 24 (The EP Lyrical Booklet) [PDF]">Genesis - 24 (The EP Lyrical
   Booklet) [PDF]</a>
 download: true
-download-link: go.krvmedia.com/genesis24
+download-link: http://go.krvmedia.com/genesis24
 google: http://go.krvmedia.com/gen24
 descriptive-heading: 24 - The EP
 ---
