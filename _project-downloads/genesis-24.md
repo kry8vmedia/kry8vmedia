@@ -16,7 +16,7 @@ artwork: artwork/genesis-24
 tracklist:
 - Campus Dreams II (feat. Destro)
 - One Day (Remix) (feat. Chatimu)
-- Good Feelin (Hallelujah)
+- Good Feelin' (Hallelujah)
 - A Poem for Death
 - 24 Years
 - Outro (feat. David, Chatimu, Chanda & Malango)
