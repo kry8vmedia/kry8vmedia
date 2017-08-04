@@ -22,6 +22,7 @@ tracklist:
 - Outro (feat. David, Chatimu, Chanda & Malango)
 download: true
 download-link: https://www.dropbox.com/s/f9r7bgavxwnab2d/Genesis%20-%2024%20%28The%20EP%29%20%5Bkrvmedia.com%5D.zip?dl=1
+google: https://drive.google.com/file/d/0B6u8wSPvjDLlazRMbTBNZzdCdTQ/view?usp=sharing
 descriptive-heading: 24 - The EP
 ---
 
