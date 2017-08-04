@@ -8,7 +8,7 @@ page-id: jumbo-page
 description: Genesis releases a surprise sophomore project on his birthday, titled
   "24"!
 headline: Genesis - 24 (The EP)
-image: artwork/genesis-24
+image: http://res.cloudinary.com/krvmedia/artwork/genesis-24
 image-name: genesis-24
 project-name: 24 - The EP
 project-artist: Genesis

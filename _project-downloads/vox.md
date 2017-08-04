@@ -8,7 +8,7 @@ page-id: jumbo-page
 description: STC The Producer's project<span>&mdash;</span>VOX. Find out what it is
   all about and download it here.
 headline: STC The Producer - VOX
-image: artwork/vox-ep
+image: http://res.cloudinary.com/krvmedia/artwork/vox-ep
 image-name: vox-ep
 project-name: VOX
 project-artist: STC The Producer
