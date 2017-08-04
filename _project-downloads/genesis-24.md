@@ -26,7 +26,7 @@ descriptive-heading: 24 - The EP
 ---
 
 **A word from Genesis:**
-This album owes it to my irresistible impulses. One week agom it was only an idea. As I continued to think about it, it became more and more difficult to dismiss it. I felt a great burden to share some of what I have learned and experienced in  the few and yet, somewhat, many years I have lived on this earth. I knew it had to be done. And so I endeavored to write these songs.
+This album owes it to my irresistible impulses. One week ago, it was only an idea. As I continued to think about it, it became more and more difficult to dismiss it. I felt a great burden to share some of what I have learned and experienced in the few and yet, somewhat, many years I have lived on this earth. I knew it had to be done. And so I endeavored to write these songs.
 
-Any more words will be pushing it, therefore, feel free to download and listen!
+Any more words will be pushing it, therefore, feel free to download, listen and enjoy!
 
