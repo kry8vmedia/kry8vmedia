@@ -1,19 +1,26 @@
 ---
+title: STC The Producer - VOX
+permalink: "/stc-vox"
 layout: project-download
-permalink: /stc-vox
 pageClass: downloads-page
 pageFooter: downloads-footer
 page-id: jumbo-page
-description: STC The Producer's project<span>&mdash;</span>VOX. Find out what it is all about and download it here.
+description: STC The Producer's project<span>&mdash;</span>VOX. Find out what it is
+  all about and download it here.
 headline: STC The Producer - VOX
-title: STC The Producer - VOX
 image: artwork/vox-ep
 image-name: vox-ep
 project-name: VOX
 project-artist: STC The Producer
 project-year: 2016
 artwork: artwork/vox-ep
-tracklist: ['Really Dope Drums', 'Dreams', 'What You Love (Prod. by Bacci x STC The Producer)', 'For My Father', 'Noise', 'Ubwali (Panda Cover)']
+tracklist:
+- Really Dope Drums
+- Dreams
+- What You Love (Prod. by Bacci x STC The Producer)
+- For My Father
+- Noise
+- Ubwali (Panda Cover)
 download: true
 download-link: https://www.dropbox.com/s/uziec5kx6ug926d/STC%20The%20Producer%20-%20VOX%20[krvmedia.com].zip?dl=1
 google: https://drive.google.com/file/d/0B37lUAfxRKTeOUR2aWVvMFQ4R0E/view?usp=sharing
