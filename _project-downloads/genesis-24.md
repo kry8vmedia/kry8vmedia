@@ -32,3 +32,5 @@ This album owes it to my irresistible impulses. One week ago, it was only an ide
 
 Any more words will be pushing it, therefore, feel free to download, listen and enjoy!
 
+Click on any any track in the tracklist to download them individually.
+
