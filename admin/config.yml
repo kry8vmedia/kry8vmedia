@@ -16,8 +16,8 @@ collections:
       - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Featured Image URL", name: "img", widget: "string", default: "img/img-name"}
-      - {label: "Webpage Image URL", name: "image", widget: "string", default: "https://res.cloudinary.com/krvmedia/c_fill,w_1200,f_jpg/img/img-name"}
+      - {label: "Featured Image URL", name: "img", widget: "imageg"}
+      - {label: "Webpage Image URL", name: "image", widget: "image"}
       - {label: "Comments", name: "comments", widget: "select", options: "true, false"}
       - {label: "Published", name: "published", widget: "string", default: "true"}
       - {label: "Post", name: "post", widget: "hidden", default: "true"}
