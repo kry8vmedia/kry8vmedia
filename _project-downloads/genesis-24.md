@@ -15,22 +15,19 @@ project-artist: Genesis
 project-year: 2017
 artwork: artwork/genesis-24
 tracklist:
-- <a target="_blank" href="http://go.krvmedia.com/gen241"
-  title="Campus Dreams II (feat. Destro)">Campus Dreams II (feat. Destro)</a>
-- <a target="_blank" href="http://go.krvmedia.com/gen242"
-  title="One Day (Remix) (feat. Chatimu)">One Day (Remix) (feat. Chatimu)</a>
-- <a target="_blank" href="http://go.krvmedia.com/243"
-  title="Good Feelin' (Hallelujah)">Good Feelin' (Hallelujah)</a>
-- <a target="_blank" href="http://go.krvmedia.com/gen244"
-  title="A Poem for Death">A Poem for Death</a>
-- <a target="_blank" href="http://go.krvmedia.com/gen245"
-  title="24 Years">24 Years</a>
-- <a target="_blank" href="http://go.krvmedia.com/gen246"
-  title="Outro (feat. David, Chatimu, Chanda & Malango)">Outro (feat. David, Chatimu,
-  Chanda & Malango)</a>
-- <a target="_blank" href="http://go.krvmedia.com/gen247"
-  title="Genesis - 24 (The EP Lyrical Booklet) [PDF]">Genesis - 24 (The EP Lyrical
-  Booklet) [PDF]</a>
+- <a target="_blank" href="http://go.krvmedia.com/gen241" title="Campus Dreams II
+  (feat. Destro)">Campus Dreams II (feat. Destro)</a>
+- <a target="_blank" href="http://go.krvmedia.com/gen242" title="One Day (Remix) (feat.
+  Chatimu)">One Day (Remix) (feat. Chatimu)</a>
+- <a target="_blank" href="http://go.krvmedia.com/243" title="Good Feelin' (Hallelujah)">Good
+  Feelin' (Hallelujah)</a>
+- <a target="_blank" href="http://go.krvmedia.com/gen244" title="A Poem for Death">A
+  Poem for Death</a>
+- <a target="_blank" href="http://go.krvmedia.com/gen245" title="24 Years">24 Years</a>
+- <a target="_blank" href="http://go.krvmedia.com/gen246" title="Outro (feat. David,
+  Chatimu, Chanda & Malango)">Outro (feat. David, Chatimu, Chanda & Malango)</a>
+- <a target="_blank" href="http://go.krvmedia.com/gen247" title="Genesis - 24 (The
+  EP Lyrical Booklet) [PDF]">Genesis - 24 (The EP Lyrical Booklet) [PDF]</a>
 download: true
 download-link: http://go.krvmedia.com/genesis24
 google: http://go.krvmedia.com/gen24
