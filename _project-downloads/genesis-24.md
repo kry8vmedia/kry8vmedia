@@ -8,7 +8,7 @@ page-id: jumbo-page
 description: Genesis releases a surprise sophomore project on his birthday, titled
   "24"!
 headline: Genesis - 24 (The EP)
-image: http://res.cloudinary.com/krvmedia/artwork/genesis-24
+image: http://res.cloudinary.com/krvmedia/c_scale,q_80,w_1200/artwork/genesis-24.jpg
 image-name: genesis-24
 project-name: 24 - The EP
 project-artist: Genesis
@@ -29,6 +29,7 @@ tracklist:
 - <a target="_blank" href="http://go.krvmedia.com/gen247" title="Genesis - 24 (The
   EP Lyrical Booklet) [PDF]">Genesis - 24 (The EP Lyrical Booklet) [PDF]</a>
 download: true
+mega: http://go.krvmedia.com/gen24mega 
 download-link: http://go.krvmedia.com/genesis24
 google: http://go.krvmedia.com/gen24
 descriptive-heading: 24 - The EP
