@@ -14,7 +14,7 @@ project-artist: MessenJah
 project-year: 2017
 artwork: artwork/memento-mori
 download: true
-mega: http://go.krvmedia.com/mementoM 
+mega: http://go.krvmedia.com/mementoM
 download-link: http://go.krvmedia.com/memento
 google: http://go.krvmedia.com/mementoG
 descriptive-heading: MessenJah - Memento Mori
