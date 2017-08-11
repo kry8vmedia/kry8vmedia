@@ -20,8 +20,9 @@ type: music.playlist
   </div>
 </div>
 
-{% if page.tracklist %}
+
 <!-- TRACKLIST -->
+{% if page.tracklist %}
 <div id="tracklist" class="section-a">
   <div class="container">
     <div class="row">
@@ -33,6 +34,8 @@ type: music.playlist
     </div>
   </div>
 </div>
+{% endif %}
+
 <div class="section-a attached-block">
   <div class="container">
 
@@ -76,6 +79,5 @@ type: music.playlist
   </div>
 </div>
 <!-- /.TRACKLIST -->
-{% endif %}
 
 {% include arrow.html %}
