@@ -5,7 +5,7 @@ layout:  project-download
 pageClass:  downloads-page
 pageFooter:  downloads-footer
 page-id:  jumbo-page
-description:  'Memento Mori' is Latin for 'Remember You Will Die'. 
+description:  Memento Mori is Latin for Remember You Will Die. 
 An anthology of poetry by MessenJah.
 headline:  MessenJah - Memento Mori
 image:  http://res.cloudinary.com/krvmedia/c_scale,q_80,w_1200/artwork/memento-mori.jpg
