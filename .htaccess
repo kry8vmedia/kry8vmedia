@@ -1,1 +1,8 @@
 AddType image/svg+xml .svg .svgz
+
+RewriteEngine on
+#--Redirect from "www.example.com/index.php?store=test"--#
+RewriteCond %{HTTP_HOST} ^(www\.)?krvmedia\.com$
+RewriteCond %{THE_REQUEST} /store\.html [NC]
+#--to "store.example.com"--#
+RewriteRule ^ http://store.krvmedia.com [L,R]
