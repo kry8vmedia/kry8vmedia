@@ -1,5 +1,4 @@
 AddType image/svg+xml .svg .svgz
 
-RewriteEngine On
-RewriteCond %{HTTP_HOST} ^(www\.)?krvmedia\.com [NC]
-RewriteRule ^/store/$ https://store.example.com/ [L,R=301]
+RewriteEngine On 
+RedirectMatch 301 ^/store https://store.krvmedia.com/
